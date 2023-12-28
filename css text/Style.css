@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #040d0d;
+}
+
+#heading {
+   
+    border: 5px;
+    border-style: solid;
+    border-color: #15e9e9;
+    border-radius: 10.50%;
+    display: block;
+    padding: 1.5% 22% 1.5% 25%;
+    margin: 2% 10%;
+    color: #950adf;
+    font-family: 'Kalnia', serif;
+    text-decoration: underline;
+    text-align: center;
+    background-image: linear-gradient(rgb(231, 95, 10) 20%,rgb(227, 233, 44) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#img {
+    height: 800px;
+    width: 1500px;
+    display: block;
+    margin: 0% 2.5% 1.5% 5.5%;
+}
+
+#pr1 {
+    padding: 00 9%;
+    border: 10px double #15e9e9;
+    border-radius: 5.5%;
+    margin: 1.5% 9% 1.5% 10%
+}
+
+#p1 {
+    border: 10px;
+    border-style: ridge;
+    border-color: #950adf;
+    border-radius: 5.5%;
+    margin: 1.4% 00;
+    padding: 1.4% 0.10%;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #D7D7D9;
+    text-align: center;
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#p2 {
+    border: 5px;
+    border-style: outset;
+    color: #D8D5D6;
+    border-color: #D50967;
+    border-radius: 5.5%;
+    margin: 1.4% 00;
+    padding: 1.4% 0.10%;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+   
+    text-align: center;
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#pr2 {
+    padding: 00 9%;
+    border: 10px double #15e9e9;
+    border-radius: 5.5%;
+    margin: 1.5% 9% 1.5% 10%
+}
+
+#n1 {
+    color: #F9F6FE;
+    border: 10px;
+    border-style: groove;
+    border-color: #950adf;
+    border-radius: 5.5%;
+    margin: 1% 2%;
+    padding: 1% 3.5%;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: linear-gradient(rgb(231, 95, 10) 20%,rgb(227, 233, 44) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+   
+}
+#n2 {
+    color: #F9F6FE;
+    border: 10px;
+    border-style: groove;
+    border-color: #950adf;
+    border-radius: 5.5%;
+    margin: 1% 2%;
+    padding: 1% 3.5%;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: linear-gradient(rgb(231, 95, 10) 20%,rgb(227, 233, 44) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+   
+}
+
+#nk1 {
+    color: #E7EFF8;
+    border: 5px;
+    border-style: inset;
+    border-color: #D50967;
+    border-radius: 5.5%;
+    margin: 1.5% 3%;
+    padding: 1.2% 0.2%;
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#nk-1 {
+    color: #E7EFF8;
+    border: 5px;
+    border-style: inset;
+    border-color: #D50967;
+    border-radius: 5.5%;
+    margin: 1.5% 3%;
+    padding: 1.2% 0.2%;
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#pr3 {
+    padding: 00 9%;
+    border: 10px double #15e9e9;
+    border-radius: 5.5%;
+    margin: 1.5% 9% 1.5% 10%;
+    
+}
+
+#no1 {
+    color: #F9F6FE;
+    border: 10px;
+    border-style: groove;
+    border-color: #950adf;
+    border-radius: 5.5%;
+    margin: 1% 2%;
+    padding: 1% 3.5%;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: linear-gradient(rgb(231, 95, 10) 20%,rgb(227, 233, 44) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.no-1 {
+    color: #E9E7EA;
+    border: 5px;
+    border-style: inset;
+    border-color: #D50967;
+    border-radius: 5.5%;
+    margin: 1.5% 3%;
+    padding: 1.2% 0.2%;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    word-spacing: 0.5px;
+    font-family: Orbitron;
+    text-align: center;
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#pr4 {
+    padding: 00 9%;
+    border: 10px double #15e9e9;
+    border-radius: 5.5;
+    margin: 1.5% 9% 1.5% 10%
+}
+
+#no2 {
+    color: #F9F6FE;
+    border: 10px;
+    border-style: groove;
+    border-color: #950adf;
+    border-radius: 5.5%;
+    margin: 1% 2%;
+    padding: 1% 3.5%;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: linear-gradient(rgb(231, 95, 10) 20%,rgb(227, 233, 44) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.no-2 {
+    color: #E9E7EA;
+    border: 5px;
+    border-style: inset;
+    border-color: #D50967;
+    border-radius: 5.5%;
+    margin: 1.5% 3%;
+    padding: 1.2% 0.2%;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    word-spacing: 0.5px;
+    font-family: Orbitron;
+    text-align: center;
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
