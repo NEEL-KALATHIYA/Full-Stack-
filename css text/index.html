@@ -2,6 +2,263 @@
 <html lang="en">
 
 <head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #040d0d;
+        }
+
+        #heading {
+
+            border: 5px;
+            border-style: solid;
+            border-color: #15e9e9;
+            border-radius: 10.50%;
+            display: block;
+            padding: 1.5% 22% 1.5% 25%;
+            margin: 2% 10%;
+            color: #950adf;
+            font-family: 'Kalnia', serif;
+            text-decoration: underline;
+            text-align: center;
+            background-image: linear-gradient(rgb(231, 95, 10) 20%, rgb(227, 233, 44) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #img {
+            height: 800px;
+            width: 1500px;
+            display: block;
+            margin: 0% 2.5% 1.5% 5.5%;
+        }
+
+        #pr1 {
+            padding: 00 9%;
+            border: 10px double #15e9e9;
+            border-radius: 5.5%;
+            margin: 1.5% 9% 1.5% 10%
+        }
+
+        #p1 {
+            border: 10px;
+            border-style: ridge;
+            border-color: #950adf;
+            border-radius: 5.5%;
+            margin: 1.4% 00;
+            padding: 1.4% 0.10%;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            color: #D7D7D9;
+            text-align: center;
+            background-image: linear-gradient(rgb(26, 209, 229) 20%, rgb(222, 10, 120) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #p2 {
+            border: 5px;
+            border-style: outset;
+            color: #D8D5D6;
+            border-color: #D50967;
+            border-radius: 5.5%;
+            margin: 1.4% 00;
+            padding: 1.4% 0.10%;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+
+            text-align: center;
+            background-image: linear-gradient(rgb(26, 209, 229) 20%, rgb(222, 10, 120) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #pr2 {
+            padding: 00 9%;
+            border: 10px double #15e9e9;
+            border-radius: 5.5%;
+            margin: 1.5% 9% 1.5% 10%
+        }
+
+        #n1 {
+            color: #F9F6FE;
+            border: 10px;
+            border-style: groove;
+            border-color: #950adf;
+            border-radius: 5.5%;
+            margin: 1% 2%;
+            padding: 1% 3.5%;
+            text-decoration: underline;
+            font-size: 20px;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kalnia', serif;
+            font-family: 'Sevillana', cursive;
+            font-family: 'Space Grotesk', sans-serif;
+            background-image: linear-gradient(rgb(231, 95, 10) 20%, rgb(227, 233, 44) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+
+        }
+
+        #n2 {
+            color: #F9F6FE;
+            border: 10px;
+            border-style: groove;
+            border-color: #950adf;
+            border-radius: 5.5%;
+            margin: 1% 2%;
+            padding: 1% 3.5%;
+            text-decoration: underline;
+            font-size: 20px;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kalnia', serif;
+            font-family: 'Sevillana', cursive;
+            font-family: 'Space Grotesk', sans-serif;
+            background-image: linear-gradient(rgb(231, 95, 10) 20%, rgb(227, 233, 44) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+
+        }
+
+        #nk1 {
+            color: #E7EFF8;
+            border: 5px;
+            border-style: inset;
+            border-color: #D50967;
+            border-radius: 5.5%;
+            margin: 1.5% 3%;
+            padding: 1.2% 0.2%;
+            font-size: 17px;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kalnia', serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-family: 'Sevillana', cursive;
+            font-family: 'Space Grotesk', sans-serif;
+            text-align: center;
+            background-image: linear-gradient(rgb(26, 209, 229) 20%, rgb(222, 10, 120) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #nk-1 {
+            color: #E7EFF8;
+            border: 5px;
+            border-style: inset;
+            border-color: #D50967;
+            border-radius: 5.5%;
+            margin: 1.5% 3%;
+            padding: 1.2% 0.2%;
+            font-size: 17px;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kalnia', serif;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-family: 'Sevillana', cursive;
+            font-family: 'Space Grotesk', sans-serif;
+            text-align: center;
+            background-image: linear-gradient(rgb(26, 209, 229) 20%, rgb(222, 10, 120) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #pr3 {
+            padding: 00 9%;
+            border: 10px double #15e9e9;
+            border-radius: 5.5%;
+            margin: 1.5% 9% 1.5% 10%;
+
+        }
+
+        #no1 {
+            color: #F9F6FE;
+            border: 10px;
+            border-style: groove;
+            border-color: #950adf;
+            border-radius: 5.5%;
+            margin: 1% 2%;
+            padding: 1% 3.5%;
+            font-size: 20px;
+            text-decoration: underline;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kalnia', serif;
+            font-family: 'Sevillana', cursive;
+            font-family: 'Space Grotesk', sans-serif;
+            background-image: linear-gradient(rgb(231, 95, 10) 20%, rgb(227, 233, 44) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+
+        .no-1 {
+            color: #E9E7EA;
+            border: 5px;
+            border-style: inset;
+            border-color: #D50967;
+            border-radius: 5.5%;
+            margin: 1.5% 3%;
+            padding: 1.2% 0.2%;
+            font-size: 15px;
+            letter-spacing: 0.2px;
+            word-spacing: 0.5px;
+            font-family: Orbitron;
+            text-align: center;
+            background-image: linear-gradient(rgb(26, 209, 229) 20%, rgb(222, 10, 120) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #pr4 {
+            padding: 00 9%;
+            border: 10px double #15e9e9;
+            border-radius: 5.5;
+            margin: 1.5% 9% 1.5% 10%
+        }
+
+        #no2 {
+            color: #F9F6FE;
+            border: 10px;
+            border-style: groove;
+            border-color: #950adf;
+            border-radius: 5.5%;
+            margin: 1% 2%;
+            padding: 1% 3.5%;
+            font-size: 20px;
+            text-decoration: underline;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Kalnia', serif;
+            font-family: 'Sevillana', cursive;
+            font-family: 'Space Grotesk', sans-serif;
+            background-image: linear-gradient(rgb(231, 95, 10) 20%, rgb(227, 233, 44) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+
+        .no-2 {
+            color: #E9E7EA;
+            border: 5px;
+            border-style: inset;
+            border-color: #D50967;
+            border-radius: 5.5%;
+            margin: 1.5% 3%;
+            padding: 1.2% 0.2%;
+            font-size: 15px;
+            letter-spacing: 0.2px;
+            word-spacing: 0.5px;
+            font-family: Orbitron;
+            text-align: center;
+            background-image: linear-gradient(rgb(26, 209, 229) 20%, rgb(222, 10, 120) 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -38,107 +295,107 @@
 
 <body>
     <div>
-            <h1>AI</h1>
-        </div>
-        <div>
-            <img src="./AI.png" alt=" AI" id="img">
-        </div>
-       
-        <div id="pr1">
-            <ul type="disk">
+        <h1>AI</h1>
+    </div>
+    <div>
+        <img src="./AI.png" alt=" AI" id="img">
+    </div>
+
+    <div id="pr1">
+        <ul type="disk">
+            <div>
                 <div>
-                    <div>
-                        <li id="n2"> Definition of AI   ?</li>
-                    </div>
-                    <div>
-                        <div id="p2">
-                            Artificial intelligence (AI) is the intelligence of machines or software, as opposed to the
+                    <li id="n2"> Definition of AI ?</li>
+                </div>
+                <div>
+                    <div id="p2">
+                        Artificial intelligence (AI) is the intelligence of machines or software, as opposed to the
                         intelligence of humans or animals. It is a field of study in computer science that develops and
                         studies intelligent machines. Such machines may be called AIs. </li>
-                
 
-                        </div>
-                        <div id="p2">
-                            Artificial intelligence is the simulation of human intelligence processes by machines,
+
+                    </div>
+                    <div id="p2">
+                        Artificial intelligence is the simulation of human intelligence processes by machines,
                         especially computer systems. Specific applications of AI include expert systems, natural
                         language processing, speech recognition and machine vision. </li>
                     </div>
-                    </div>
                 </div>
-            </ul>
-        </div>
-        
-        <div id="pr2">
-            <ul type="disk">
-                <div>
-                    <div>
-                        <li id="n1">
-                            What is AI ?</li>
-                    </div>
-                    <div>
-                        <div id="nk1">
-                            Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with
-                            building smart machines capable of performing tasks that typically require human
-                            intelligence. While AI is an interdisciplinary science with multiple approaches,
-                            advancements in machine learning and deep learning, in particular, are creating a paradigm
-                            shift in virtually every sector of the tech industry.
+            </div>
+        </ul>
+    </div>
 
-
-                        </div>
-                        <div id="nk-1">
-                            Artificial intelligence allows machines to model, or even improve upon, the capabilities of
-                            the human mind. And from the development of self-driving cars to the proliferation of
-                            generative AI tools like ChatGPT and Google’s Bard, AI is increasingly becoming part of
-                            everyday life — and an area companies across every industry are investing in.
-                        </div>
-                    </div>
-                </div>
-            </ul>
-        </div>
-        <div id="pr3">
+    <div id="pr2">
+        <ul type="disk">
             <div>
                 <div>
-                    <li id="no1">
-                        How AI Will change Work ?</li>
+                    <li id="n1">
+                        What is AI ?</li>
                 </div>
                 <div>
-                    <div class="no-1">
-                        “The bottom 90 percent, especially the bottom 50 percent of the world in terms of income or
-                        education, will be badly hurt with job displacement … The simple question to ask is, ‘How
-                        routine is a job?’ And that is how likely [it is] a job will be replaced by AI, because AI can,
-                        within the routine task, learn to optimize itself. And the more quantitative, the more objective
-                        the job is—separating things into bins, washing dishes, picking fruits and answering customer
-                        service calls—those are very much scripted tasks that are repetitive and routine in nature. In
-                        the matter of five, 10 or 15 years, they will be displaced by AI.” </div>
-                    <div class="no-1">
-                        In the warehouses of online giant and AI powerhouse Amazon, which buzz with more than 100,000
-                        robots, picking and packing functions are still performed by humans — but that will change.
+                    <div id="nk1">
+                        Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with
+                        building smart machines capable of performing tasks that typically require human
+                        intelligence. While AI is an interdisciplinary science with multiple approaches,
+                        advancements in machine learning and deep learning, in particular, are creating a paradigm
+                        shift in virtually every sector of the tech industry.
+
+
+                    </div>
+                    <div id="nk-1">
+                        Artificial intelligence allows machines to model, or even improve upon, the capabilities of
+                        the human mind. And from the development of self-driving cars to the proliferation of
+                        generative AI tools like ChatGPT and Google’s Bard, AI is increasingly becoming part of
+                        everyday life — and an area companies across every industry are investing in.
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="pr4">
+        </ul>
+    </div>
+    <div id="pr3">
+        <div>
             <div>
-                <div>
-                    <li id="no2">
-                        The Near Future of AI ?</li>
-                </div>
-                <div>
-                    <div class="no-2">
-                        In Mendelson’s view, some of the most intriguing AI research and experimentation that will have
-                        near-future ramifications is happening in two areas: “reinforcement” learning, which deals in
-                        rewards and punishment rather than labeled data; and generative adversarial networks (GAN for
-                        short) that allow computer algorithms to create rather than merely assess by pitting two nets
-                        against each other. The former is exemplified by the prowess of Google DeepMind’s AlphaGo Zero,
-                        the latter by original image or audio generation that’s based on learning about a certain
-                        subject like celebrities or a particular type of music. </div>
-                    <div class="no-2">
-                        On a far grander scale, AI is poised to have a major effect on sustainability, climate change
-                        and environmental issues. Ideally and partly through the use of sophisticated sensors, cities
-                        will become less congested, less polluted and generally more livable. </div>
+                <li id="no1">
+                    How AI Will change Work ?</li>
+            </div>
+            <div>
+                <div class="no-1">
+                    “The bottom 90 percent, especially the bottom 50 percent of the world in terms of income or
+                    education, will be badly hurt with job displacement … The simple question to ask is, ‘How
+                    routine is a job?’ And that is how likely [it is] a job will be replaced by AI, because AI can,
+                    within the routine task, learn to optimize itself. And the more quantitative, the more objective
+                    the job is—separating things into bins, washing dishes, picking fruits and answering customer
+                    service calls—those are very much scripted tasks that are repetitive and routine in nature. In
+                    the matter of five, 10 or 15 years, they will be displaced by AI.” </div>
+                <div class="no-1">
+                    In the warehouses of online giant and AI powerhouse Amazon, which buzz with more than 100,000
+                    robots, picking and packing functions are still performed by humans — but that will change.
                 </div>
             </div>
         </div>
+    </div>
+    <div id="pr4">
+        <div>
+            <div>
+                <li id="no2">
+                    The Near Future of AI ?</li>
+            </div>
+            <div>
+                <div class="no-2">
+                    In Mendelson’s view, some of the most intriguing AI research and experimentation that will have
+                    near-future ramifications is happening in two areas: “reinforcement” learning, which deals in
+                    rewards and punishment rather than labeled data; and generative adversarial networks (GAN for
+                    short) that allow computer algorithms to create rather than merely assess by pitting two nets
+                    against each other. The former is exemplified by the prowess of Google DeepMind’s AlphaGo Zero,
+                    the latter by original image or audio generation that’s based on learning about a certain
+                    subject like celebrities or a particular type of music. </div>
+                <div class="no-2">
+                    On a far grander scale, AI is poised to have a major effect on sustainability, climate change
+                    and environmental issues. Ideally and partly through the use of sophisticated sensors, cities
+                    will become less congested, less polluted and generally more livable. </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
