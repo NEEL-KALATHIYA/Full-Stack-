@@ -72,7 +72,17 @@
 }
 
 .b1{
-    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    background-image: linear-gradient(rgb(255, 94, 0) 20%,rgb(240, 142, 4) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.b2{
+    background-image: linear-gradient(rgb(0, 94, 255) 20%,rgb(4, 181, 240) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.b3{
+    background-image: linear-gradient(rgb(255, 0, 0) 20%,rgb(176, 176, 176) 80%);
     -webkit-background-clip: text;
     color: transparent;
 }
