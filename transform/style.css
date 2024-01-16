@@ -12,7 +12,7 @@
         height: 100px;
         width: 100px;
         background-color: rgb(226, 38, 63);
-        transition: 0.5S;
+        transition: 1s;
         text-align: center;
     }
 }
@@ -23,7 +23,7 @@
 
 #box1:hover {
     padding: 2%;
-    transform: rotate(150deg);
+    transform: rotate(360deg);
     background-color: rgb(51, 191, 86);
 }
 
