@@ -2,6 +2,178 @@
 <html lang="en">
 
 <head>
+    <style>
+        * {
+            margin: none;
+            padding: none;
+        }
+
+        .Parent-1 {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .Parent-1 .box {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box .b1 {
+            height: 100%;
+            width: 100%;
+            border-radius: 5%;
+        }
+
+        .b1 .Contant {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15%;
+        }
+
+        #b1 .Contant {
+            color: #afc8e7;
+        }
+
+        .b1 .Contant .icon {
+            position: relative;
+            top: 10px;
+        }
+
+        .b1 .Contant .Price {
+            font-size: large;
+        }
+
+        .b1 .Contant .Price span {
+            display: block;
+            font-size: medium;
+            color: red;
+            text-decoration: line-through;
+        }
+
+        .box .image {
+            height: 170px;
+            width: 300px;
+            border-radius: 5%;
+        }
+
+        .box #b1 {
+            background-color: #7a7a7c;
+
+            #text {
+                color: #EDF1EF;
+            }
+        }
+
+        .box #b2 {
+            background-color: #d0bf6c;
+
+            #text {
+                color: #0b0b0b;
+            }
+        }
+
+        .box #b3 {
+            background-color: #f1f0ee;
+
+            #text {
+                color: #b2b4b1;
+            }
+
+            #Contant {
+                color: #070709;
+            }
+        }
+
+        .box #b4 {
+            background-color: #c4c4c2;
+
+            #text {
+                color: #6a92b3;
+            }
+
+            #Contant {
+                color: #1b2133;
+            }
+        }
+
+        .box #b5 {
+            background-color: #656d77;
+
+            #text {
+                color: #b4b9cc;
+            }
+
+            #Contant {
+                color: #b4b9cc;
+            }
+        }
+
+        #b1:hover {
+            background-color: white;
+
+            #text {
+                color: black;
+            }
+
+            #Contant {
+                color: black;
+            }
+        }
+
+        #b2:hover {
+            background-color: gold;
+
+            #text {
+                color: black;
+            }
+
+            #Contant {
+                color: black;
+            }
+        }
+
+        #b3:hover {
+            background-color: grey;
+
+            #text {
+                color: white;
+            }
+
+            #Contant {
+                color: white;
+            }
+        }
+
+        #b4:hover {
+            background-color: #6a92b3;
+
+            #text {
+                color: black;
+            }
+
+            #Contant {
+                color: black;
+            }
+        }
+
+        #b5:hover {
+            background-color: #b4b9cc;
+
+            #text {
+                color: white;
+            }
+
+            #Contant {
+                color: white;
+            }
+        }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Page</title>
@@ -17,10 +189,10 @@
 <body>
     <div class="Parent-1">
         <div class="box">
-            <div class="b1" id="b1" id="b1" >
+            <div class="b1" id="b1" id="b1">
                 <img class="image" src="https://s3-prod.autonews.com/s3fs-public/ROLLS_ROYCE_GHOST-MAIN_i.jpg"
                     alt="Shoes-Photo" />
-                <span id="text" >ROLLS ROYCE GHOST MAIN</span>
+                <span id="text">ROLLS ROYCE GHOST MAIN</span>
                 <div class="Contant">
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
@@ -42,7 +214,7 @@
                 <img class="image"
                     src="https://im.whatshot.in/img/2020/Mar/rolls-royce-taxi-india-carscoops-cropped-1583734537.jpg"
                     alt="Shoes-Photo" />
-                <span id="text" >Nike Jordan Air Shoes</span>
+                <span id="text">Nike Jordan Air Shoes</span>
                 <div class="Contant">
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
@@ -104,7 +276,8 @@
 
         <div class="box">
             <div class="b1" id="b5">
-                <img class="image" src="https://imgd-ct.aeplcdn.com/664x415/ec/9779/img/l/Bugatti-Veyron-Front-three-fourth-15103.jpg?v=201711021421&q=80"
+                <img class="image"
+                    src="https://imgd-ct.aeplcdn.com/664x415/ec/9779/img/l/Bugatti-Veyron-Front-three-fourth-15103.jpg?v=201711021421&q=80"
                     alt="Shoes-Photo" />
                 <span id="text">Nike Jordan Air Shoes</span>
                 <div class="Contant" id="Contant">
