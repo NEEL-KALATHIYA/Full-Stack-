@@ -1,15 +1,16 @@
-body{
+body {
 
-    background-image: url("/HTML_Santa/Santa\ Claus.jpeg");
-    
+    background-image: url("./Santa\ Claus.jpeg");
+
 }
 
 
-.background{
+.background {
 
     color: red;
 }
-#n1{
+
+#n1 {
     border: 5px;
     border-style: outset;
     border-color: red;
@@ -23,8 +24,9 @@ body{
     text-align: center;
 
 }
-#line{
-    background-image: linear-gradient(white 20%,red 100%);
+
+#line {
+    background-image: linear-gradient(white 20%, red 100%);
     background-clip: text;
     color: transparent;
 }

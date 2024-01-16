@@ -1,0 +1,78 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.Parent .html {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+}
+
+.Parent .html #img1 {
+    position: relative;
+    top: 200px;
+}
+
+.Parent .html .text {
+    position: relative;
+    top: 50px;
+    color: red;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.Parent .css {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    margin-top: 20px;
+}
+
+.Parent .css #img1 {
+    position: relative;
+    top: 200px;
+}
+
+.Parent .css .text {
+    position: relative;
+    top: 50px;
+    color: blue;
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+.Parent .java {
+    height: 650px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    margin-top: 20px;
+}
+
+.Parent .java #img1 {
+    position: relative;
+    top: 200px;
+}
+
+.Parent .java .text {
+    position: relative;
+    top: 50px;
+    color: rgb(223, 56, 56);
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+.b1{
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(222, 10, 120) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -1,0 +1,47 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.Parent {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: xx-large;
+
+    .box {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(226, 38, 63);
+        transition: 0.5S;
+        text-align: center;
+    }
+}
+
+#box4 {
+    font-size: medium;
+}
+
+#box1:hover {
+    padding: 2%;
+    transform: rotate(150deg);
+    background-color: rgb(51, 191, 86);
+}
+
+#box2:hover {
+    padding: 2%;
+    transform: skew(-30deg, 40deg);
+    background-color: rgb(11, 54, 182);
+}
+
+#box3:hover {
+    padding: 2%;
+    transform: scale(1.5);
+    background-color: rgb(224, 169, 16);
+}
+
+#box4:hover {
+    padding: 2%;
+    transform: translate(60px, 25px);
+    background-color: navy;
+    color: azure;
+}

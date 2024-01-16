@@ -1,0 +1,83 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.parent {
+    display: flex;
+    font-family: 'Mukta', sans-serif;
+}
+
+div .border1 {
+    height: 547px;
+    width: 280px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 20px;
+}
+
+#img1 {
+    height: 200px;
+    width: 230px;
+}
+
+#b4 #img1 {
+    height: 200px;
+    width: 100%;
+}
+
+div .border1 p {
+    text-align: center;
+    font-size: medium;
+    color: gray;
+}
+
+.border1 .price {
+    color: rgb(30, 29, 28);
+    font-size: 22px;
+}
+
+.border1 .star {
+    display: inline-block;
+    color: rgb(255, 226, 0);
+    color: linear-gradient(90deg, rgba(255, 226, 0, 1) 0%, rgba(255, 239, 16, 1) 35%, rgba(255, 239, 0, 1) 100%);
+}
+
+.border1 .button {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    height: 71px;
+    width: 280px;
+    border-radius: 00 00 20px 20px;
+    border: 1px;
+    border-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(9, 149, 224);
+    font-size: 20px;
+    transition: background-color 0.5s;
+}
+
+.border1 .button:hover {
+    color: rgb(26, 25, 24);
+    background-color: whitesmoke;
+}
+
+.border1 .box2 .button:hover {
+    color: #cd181b;
+    background-color: black;
+}
+
+.border1 .box3 .button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.border1 .box4 .button:hover {
+    color: rgb(252, 255, 47);
+    background-color: rgba(112, 108, 108, 0.831);
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+}
