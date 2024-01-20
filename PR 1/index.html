@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            text-transform: none;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        body header {
+            width: 100%;
+            height: 8vh;
+            background-color: #F7F7F7;
+            display: flex;
+            justify-content: space-between;
+
+            border-radius: 10px;
+
+            .Logo {
+                width: 25%;
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-size: 20px;
+                    padding: 0 15px;
+                    transition: all 0.5s;
+                }
+                img{
+                    height: 70px;
+                    width: 80px;
+                }
+            }
+
+            .Logo span:hover {
+                font-size: 21px;
+            }
+
+            .Content {
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 17px;
+                align-items: center;
+
+                .box {
+                    a {
+                        font-size: 19px;
+                        transition: all 0.5s;
+                        color: black;
+                    }
+
+                    a:hover {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+
+        body section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+
+            .col {
+                height: auto;
+                width: auto;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 10px;
+
+                .box {
+                    padding-inline-start: 10%;
+                    font-family: 'Roboto Slab', serif;
+                    color: black;
+                }
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                row-gap: 20px;
+                column-gap: 20px;
+
+                .box {
+                    height: 350px;
+                    width: 350px;
+                    background-color: white;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    border-radius: 10px;
+                    text-align: center;
+
+                    span {
+                        height: 0;
+                        width: 0;
+                        margin: none;
+                        padding: none;
+                    }
+                }
+
+                #box {
+                    align-items: center;
+                    position: relative;
+
+                    img {
+                        display: block;
+                        margin: auto;
+                        height: 175px;
+                        width: 330px;
+                        margin-top: 2.5%;
+                        border-radius: 10px;
+                        transition: all 0.5s;
+                    }
+
+                    img:hover {
+                        height: 180px;
+                        width: 335px;
+                    }
+
+                    .contant {
+                        font-family: 'Roboto Slab', serif;
+                        letter-spacing: 1px;
+
+                        p {
+                            letter-spacing: 1px;
+                            font-size: larger;
+                        }
+
+                        #Price {
+                            font-size: medium;
+                        }
+
+                        div button {
+                            position: absolute;
+                            bottom: 8%;
+                            left: 29%;
+                            right: 40%;
+                            height: 25px;
+                            width: 45%;
+                            background-color: #ecebeb;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+                            border-radius: 5px;
+                            border-color: rgb(29, 29, 29);
+                            transition: all 0.5s;
+                        }
+
+                        div button:hover {
+                            background-color: #dddada;
+                            color: rgb(13, 12, 12);
+                            font-size: 13px;
+                            height: 27px;
+                            width: 46%;
+                            left: 28%;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <img src="./Ice+Cream+Shack+Logo-removebg-preview.png" alt="Logo_png">
+            <span>Shake On Ice-Cream</span>
+        </div>
+
+        <div class="Content">
+            <div class="box">
+                <img src="./home.png" alt="">
+                <a href="#">Home</a>
+            </div>
+
+            <div class="box">
+                <img src="./contact-us.png" alt="">
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <img src="./login.png" alt="">
+                <a href="#">Login</a>
+            </div>
+
+            <div class="box">
+                <img src="./add-user.png" alt="">
+                <a href="#">Sign Up</a>
+            </div>
+
+            <div class="box">
+                <img src="./gear.png" alt="">
+                <a href="#">Setting</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="col">
+            <div class="box">
+                <div>
+                    Filter : <br> <br>
+                    <span>Lower to Higher
+                        <input type="checkbox" name="" id="">
+                    </span>
+                    <br> <br>
+                    <span>Higher to Lower
+                        <input type="checkbox" name="" id="">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="r1">
+            <div class="box" id="box">
+                <img src="https://www.bitensip.com/wp-content/uploads/2022/11/kit-kat-shake.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Kit Kat Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹150</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/64811f53c0b6d98bbbde9929/kpc_fptlvvuswrrij0am4dh9ve4hndw5p-5iuaarobpbsmsfiglrq3xei35oenc_x1oimlaflp1ufj98o-a6ozqexy3zu6pxcp5plcyg.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Belgian Chocolate Shake </p>
+                    </span>
+                    <div id="Price">Price : ₹150</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Waagmi_Soni/oreo-milkshake-recipe.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Oreo Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹150</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://www.gestationaldiabetes.co.uk/wp-content/uploads/2023/06/thick-strawberry-shake5.jpg" alt="">
+                <div class="contant">
+                    <span>
+                        <p>Strawberry Shake</p>
+                    </span>
+                    <div id="Price">Price : $120</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://ministryofcurry.com/wp-content/uploads/2022/06/Mango-Mastani_-4.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Mango Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹120</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://img.freepik.com/premium-photo/three-glasses-milkshake-with-assorted-flavors-chocolate-vanilla-strawberry-milkshake_434193-2702.jpg" alt="">
+                <div class="contant">
+                    <span>
+                        <p>Combo Rose,Chocolate and Vanilla shake </p>
+                    </span>
+                    <div id="Price">Price : ₹310</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/328457208/AU/NO/XM/230579/kesar-pista-milkshake-500x500.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Dark Chocolate shake</p>
+                    </span>
+                    <div id="Price">Price : ₹120</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://stallgo.com/wp-content/uploads/2023/04/stallgo-milk-shake-19.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Pista Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹140</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://www.shutterstock.com/image-photo/blueberry-smoothie-glass-jar-straw-260nw-552184501.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Rose And Java Plum Shack</p>
+                    </span>
+                    <div id="Price">Price : ₹140</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://c4.wallpaperflare.com/wallpaper/447/482/550/food-drink-chocolate-glass-wallpaper-preview.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Combo Chocolate and Strawberry Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹200</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://media.istockphoto.com/id/484996684/photo/homemade-cookie-dough-milkshake.jpg?s=612x612&w=0&k=20&c=uoZ0EiMsEvbG7SxnnRIZIB0wDUR96sbLYcKl_VAOJtg=" alt="">
+                <div class="contant">
+                    <span>
+                        <p>Ccookies shake</p>
+                    </span>
+                    <div id="Price">Price : ₹140</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://melukshut.com/assets/uploads/media-uploader/thickshake-1-min1683896436.png"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Mix Fruit Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹200</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/645f15cbc121f66af64a7c62/image-ux1edk-1683636561.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Kesar shake</p>
+                    </span>
+                    <div id="Price">Price : ₹150</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://www.shutterstock.com/image-photo/chocolate-indulgent-extreme-milkshake-brownie-600nw-657959920.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>Brownie Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹180</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://thumbs.dreamstime.com/b/caramel-chocolate-crazy-freakshake-milkshakes-brezel-waffles-popcorn-marshmallow-ice-cream-whipped-cream-indulgent-95245325.jpg" alt="">
+                <div class="contant">
+                    <span>
+                        <p>Brownie And Butter Scotch Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹15</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" id="box">
+                <img src="https://img.freepik.com/premium-photo/milkshakes-with-combination-different-flavors-available-caf_908985-15406.jpg"
+                    alt="">
+                <div class="contant">
+                    <span>
+                        <p>5 flavour combo Shake</p>
+                    </span>
+                    <div id="Price">Price : ₹500</div>
+                    <div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
