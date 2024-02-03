@@ -140,7 +140,19 @@ body {
 
 .box {
   width: 100%;
-  min-height: 65px;
+  min-height: 50px;
+  font-size: large;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-style:none;
+  background-color: #000;
+  border: 1px solid white;
+  opacity: 0.5;
+  padding-left: 3%;
+  -webkit-text-fill-color: #fff;
+  
 }
 
 .try {
@@ -149,10 +161,16 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e50914;
-  min-height: 70px;
+  min-height: 50px;
   width: 80%;
   font-size: 30px;
   text-transform: uppercase;
+  font-size: x-large;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 0.5%;
 }
 
 .area h4 {
@@ -322,7 +340,18 @@ body {
 
 .box1 {
   width: 100%;
-  min-height: 65px;
+  min-height: 50px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-style:none;
+  background-color: #000;
+  border: 1px solid white;
+  opacity: 0.5;
+  padding-left: 3%;
+  -webkit-text-fill-color: #fff;
+  font-size: large;
 }
 
 .try1 {
@@ -331,12 +360,20 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e50914;
-  min-height: 70px;
+  min-height: 50px;
   width: 70%;
   color: white;
   font-size: 30px;
   margin: 50px 0;
   text-transform: uppercase;
+  font-size: x-large;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-style:none;
+  margin-left: 0.4%;
+
 }
 
 .question h4 {
