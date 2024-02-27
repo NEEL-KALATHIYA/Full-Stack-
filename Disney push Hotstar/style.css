@@ -706,7 +706,7 @@ a:hover {
 	left: 50%;
 	margin: -200px 0 0 -300px;
 	position: absolute;
-	top: 95%;
+	top: 100%;
   width: 600px;
 	z-index: 2;
 }
@@ -755,10 +755,6 @@ canvas:active {
 #gui {
 	right: 0;
 	/* position: fixed; */
-	top: 80vh;
+	top: 100%;
 	z-index: 3;
-}
-
-#test{
-
 }
