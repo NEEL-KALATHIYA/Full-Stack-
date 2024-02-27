@@ -703,11 +703,11 @@ a:hover {
 #canvas-container {
 	background: #000 url(https://jackrugile.com/lab/fireworks-v2/images/bg.jpg);
   height: 400px;
-	left: 40%;
+	left: 50%;
 	margin: -200px 0 0 -300px;
 	position: absolute;
-	top: 100%;
-  width: 1000px;
+	top: 95%;
+  width: 600px;
 	z-index: 2;
 }
 		
