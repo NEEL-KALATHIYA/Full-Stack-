@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
     <style>:root {
         --border-width: calc(var(--diameter-tile) / 60);
         --diameter-board: min(85vw, 85vh);
@@ -637,6 +638,7 @@
             }
             const result = method ? method(args) : { moves: [], captures: [] };
             if (resultingChecks) {
+
                 const moveIndex = args.moveIndex + 1;
                 result.moves = result.moves.filter((location) => !resultingChecks({ piece, location, capture: false, moveIndex }).length);
                 result.captures = result.captures.filter((location) => !resultingChecks({ piece, location, capture: true, moveIndex }).length);
@@ -1199,6 +1201,9 @@
             console.log(state);
             if (!state.moves && !state.captures) {
                 alert(state.stalemate ? "Stalemate!" : `${this.turn === "WHITE" ? "Black" : "White"} Wins!`);
+
+                window.location.href="/Chess/New1.html"
+
             }
             return castledId;
         }
