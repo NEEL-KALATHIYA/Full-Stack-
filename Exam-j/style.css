@@ -103,7 +103,7 @@ li {
 }
 
 
-/* #toggle {
+#toggle {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -111,15 +111,4 @@ li {
     border: none;
     font-size: 16px;
     cursor: pointer;
-} */
-
-#toggle{
-    float: inline-end;
-    margin-top: 2%;
-    margin-right: 2%;
-}
-.q{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
 }
