@@ -31,13 +31,6 @@
           }
         });
 
-        $(add - task).ready(function () {
-          if ("vibrate" in navigator) {
-            window.navigator.vibrate(1000);
-          } else {
-            console.log("Vibration not supported");
-          }
-        });
 
         $("#task-list").on("click", ".task", function () {
           $(this).toggleClass("completed");
