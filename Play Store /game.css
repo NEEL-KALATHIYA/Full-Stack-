@@ -456,3 +456,10 @@ p{
     }
 }
 
+.m-img{
+    width: 100wh;
+
+}
+.m-img img{
+    width:100%;
+}

@@ -16,14 +16,14 @@
       <h1 class="q">To-Do List</h1>
       <input type="text" id="n-t" placeholder="Add new task" />
       <button id="add-task">Add Task</button>
-      <ul id="task-list"></ul>
+      <ul id="t-l"></ul>
     </div>
     <script>
      
         $("#add-task").click(function () {
           var taskName = $("#n-t").val();
           if (taskName !== "") {
-            $("#task-list").append(
+            $("#t-l").append(
               '<li><span class="task">' +
                 taskName +
                 '</span><button class="delete">Delete</button></li>'
@@ -33,11 +33,11 @@
         });
 
 
-        $("#task-list").on("click", ".task", function () {
+        $("#t-l").on("click", ".task", function () {
           $(this).toggleClass("completed");
         });
 
-        $("#task-list").on("click", ".delete", function () {
+        $("#t-l").on("click", ".delete", function () {
           $(this).parent().remove();
         });
 
