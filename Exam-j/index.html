@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery To-Do List</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="body">
+      <button id="toggle">Toggle Dark/Light</button>
+      <h1>To-Do List</h1>
+      <input type="text" id="n-t" placeholder="Add new task" />
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#add-task").click(function () {
+          var taskName = $("#n-t").val();
+          if (taskName !== "") {
+            $("#task-list").append(
+              '<li><span class="task">' +
+                taskName +
+                '</span><button class="delete">Delete</button></li>'
+            );
+            $("#n-t").val("");
+          }
+        });
+
+        $(add - task).ready(function () {
+          if ("vibrate" in navigator) {
+            window.navigator.vibrate(1000);
+          } else {
+            console.log("Vibration not supported");
+          }
+        });
+
+        $("#task-list").on("click", ".task", function () {
+          $(this).toggleClass("completed");
+        });
+
+        $("#task-list").on("click", ".delete", function () {
+          $(this).parent().remove();
+        });
+
+        $("#toggle").click(function () {
+          $("body").toggleClass("dark-mode");
+        });
+      });
+    </script>
+  </body>
+</html>
