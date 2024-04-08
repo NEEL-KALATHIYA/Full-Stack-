@@ -32,6 +32,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <style>
       body {
         overflow-x: hidden;
@@ -234,6 +255,26 @@
       .navbar-default .navbar-toggle:focus {
         background-color: #1ee2e7;
       }
+      .nav {
+        font-size: large;
+        text-decoration: transparent;
+        /* width: 100%; */
+      }
+      #logon {
+        position: absolute;
+        /* margin-right: 90%; */
+        /* margin-top: -0.8%; */
+        margin-left: 10%;
+      }
+
+      .fa-gear {
+        margin-top: 1.2%;
+        /* margin-left: 1.2%;         */
+      }
+      .fa-magnifying-glass{
+        margin-top: 1.2%;
+        margin-right: 1.2%;          
+      }
 
       .navbar-default .nav li a {
         text-transform: uppercase;
@@ -255,10 +296,10 @@
         background-color: #1ee2e7;
       }
 
-      .navbar-default .navbar-nav > .active > a:hover,
+      .d-flex li a:hover,
       .navbar-default .navbar-nav > .active > a:focus {
-        color: #fff;
-        background-color: #17d0d5;
+        color: #17d0d5;
+        background-color: transparent;
       }
 
       @media (min-width: 768px) {
@@ -921,6 +962,15 @@
     data-pinterest-extension-installed="cr1.3.4"
   >
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+      <img
+        id="logon"
+        height="150px"
+        width="150px"
+        class="img-fluid text-light"
+        src="https://static1.squarespace.com/static/62391df16cf21617110c41c6/t/623a9296af0ee866170d9c21/1648005782157/Side+by+Side+white+large+txt.png?format=1500w"
+        alt=""
+      />
+
       <div class="container">
         <div class="navbar-header page-scroll">
           <button
@@ -934,13 +984,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top"
-            >ˇVˇˇCare</a
-          >
+          <!-- <a class="navbar-brand page-scroll" href="#page-top">ˇVˇˇCare</a> -->
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav d-flex justify-content-around">
             <li class="hidden active">
               <a href="#page-top"></a>
             </li>
@@ -959,6 +1007,8 @@
             <li class="">
               <a class="page-scroll" href="#CONTACT">CONTACT</a>
             </li>
+            <i class="fa-solid fa-gear" style="color: #1d65f7"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: #1d65f7"></i>
           </ul>
         </div>
       </div>
@@ -1010,8 +1060,9 @@
             </span>
             <h4 class="service-heading">Our Ysion</h4>
             <p class="text-muted">
-                innisview.nealnadvancesand innovationsempnasizedisease oreventiona n dnolisticnealine.
-                leading to good looks and quality of life for all.
+              innisview.nealnadvancesand innovationsempnasizedisease oreventiona
+              n dnolisticnealine. leading to good looks and quality of life for
+              all.
             </p>
           </div>
           <div class="col-md-4">
@@ -1025,6 +1076,286 @@
               maxime quam architecto quo inventore harum ex magni, dicta
               impedit.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="container py-4 px-3">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <button
+                type="button"
+                class="btn btn-primary"
+                class="px-4"
+                style="
+                  --bs-btn-padding-y: 0.25rem;
+                  --bs-btn-padding-x: 0.5rem;
+                  --bs-btn-font-size: 0.75rem;
+                "
+              >
+                about life care
+              </button>
+              <h1 class="p-3">
+                Good Services And Better Health By Our Specialists
+              </h1>
+              <p class="p-3">
+                Great doctor if you need your family member to get effective
+                immediate assistance, emergency treatment or a simple
+                consultation.
+              </p>
+              <p class="p-3">
+                Our specialists are dedicated to providing exceptional
+                healthcare services that prioritize the well-being and health of
+                our patients.
+              </p>
+              <p class="p-3">
+                We strive for excellence in every aspect of our practice, from
+                accurate diagnosis and effective treatment to compassionate care
+              </p>
+
+              <button
+                type="button"
+                class="btn btn-lg border border-dark fw-bold"
+              >
+                Read more
+              </button>
+            </div>
+
+            <div class="col-md-5 order-md-1 py-0">
+              <img
+                src="https://www.transparentpng.com/thumb/doctor/foreign-old-male-doctor-clipart-png--bFAEUQ.png"
+                alt=""
+                height="600"
+                width="600"
+                class="img-fluid mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex justify-content-center my-5">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Eye Care</p>
+              <p style="color: #396bf0">
+                Eye care is the crucial practice <br />
+                of maintaining and preserving <br />
+                the health and function of our<br />
+                eyes. <br />
+                Regular eye examinations,...
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-head-side-virus"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Psychotherapy</p>
+              <p style="color: #396bf0">
+                Psychotherapy, often <br />
+                referred to as talk therapy,<br />
+                is a therapeutic approach <br />
+                that involves conversations <br />
+                between a.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Primary Care</p>
+              <p style="color: #396bf0">
+                Primary care is the foundation of <br />
+                healthcare, providing individuals <br />
+                with a first point of contact for their <br />
+                medical needs. Primary...
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Dental Care</p>
+              <p style="color: #396bf0">
+                Dental care is essential for <br />
+                maintaining oral health and <br />overall well-being. It <br />
+                encompasses a range of <br />preventive and.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Orthopedic</p>
+              <p style="color: #396bf0">
+                Orthopedics is a specialized <br />
+                field of medicine dedicated to the <br />
+                diagnosis, treatment, and <br />
+                prevention of musculoskeletal...
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Cardiology</p>
+              <p style="color: #396bf0">
+                Cardiology is the medical specialty <br />that concentrates on
+                the heart and <br />cardiovascular system. <br />
+                Cardiologists are <br />healthcare...
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Gynecology</p>
+              <p style="color: #396bf0">
+                Gynecology is the medical field <br />
+                focused on the health and well- being of <br />
+                the female reproductive system...
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              style="
+                color: #396bf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 45px;
+                background-color: #eaf0fc;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 6px;
+              "
+            >
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div>
+              <p style="font-size: 30px; font-weight: 600">Neurology</p>
+              <p style="color: #396bf0">
+                Neurology is a medical <br />
+                specialty focused on the <br />
+                diagnosis and treatment of <br />
+                disorders that affect the <br />
+                nervous system,...
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1173,6 +1504,29 @@
               <p class="text-muted">Website Design</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="counter container-fluid bg-info d-flex justify-content-around align-items-center"
+      >
+        <div>
+          <span class="fs-0" style="font-size: 80px">22</span>
+          <p class="fw-bolder fs-3">health section</p>
+        </div>
+        <div>
+          <span class="fs-0">146 </span>
+          <p class="fw-bolder fs-3">Different Services</p>
+        </div>
+        <div>
+          <span class="fs-0">400</span>
+          <p class="fw-bolder fs-3">Blood Donations</p>
+        </div>
+        <div>
+          <span class="fs-0">1300</span>
+          <p class="fw-bolder fs-3">Satisfied Patients</p>
         </div>
       </div>
     </section>
@@ -1462,29 +1816,50 @@
     </section>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright © Your Website 2014</span>
+      <div
+        class="container-fluid footer-parent d-flex justify-content-center align-items-center"
+      >
+        <div class="container child d-flex justify-content-between">
+          <div class="footer-boxes d-flex flex-column">
+            <img
+              height="200px"
+              width="200px"
+              class="img-fluid text-light"
+              src="https://static1.squarespace.com/static/62391df16cf21617110c41c6/t/623a9296af0ee866170d9c21/1648005782157/Side+by+Side+white+large+txt.png?format=1500w"
+              alt=""
+            />
+            <p class="my-1 text-light">
+              Great Doctor If You Need Your FAmily <br />Member To Get Effective
+              Immediate <br />Assistance. Emergency Treatement Or A <br />Simple
+              Cusultiation.
+            </p>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
+          <div class="footer-boxes1 d-flex flex-column">
+            <p class="h1 company text-light">Company</p>
+            <a class="text-light text-decoration-none" href="">About</a>
+            <a class="text-light text-decoration-none" href="">Service</a>
+            <a class="text-light text-decoration-none" href="">Team</a>
+            <a class="text-light text-decoration-none" href="">Project</a>
+            <a class="text-light text-decoration-none" href="">Blog</a>
+            <a class="text-light text-decoration-none" href="">Log-in</a>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-            </ul>
+          <div class="footer-boxes1 d-flex flex-column">
+            <p class="h1 company text-light">Department</p>
+            <a class="text-light text-decoration-none" href="">Eye Care</a>
+            <a class="text-light text-decoration-none" href="">Psychotherapy</a>
+            <a class="text-light text-decoration-none" href="">Dental Care</a>
+            <a class="text-light text-decoration-none" href="">Orthopedic</a>
+            <a class="text-light text-decoration-none" href="">Cardiogly</a>
+            <a class="text-light text-decoration-none" href="">Gynecology</a>
+          </div>
+          <div class="footer-boxes1 d-flex flex-column">
+            <p class="h1 company text-light">Contact us</p>
+            <a class="text-light text-decoration-none" href="">About</a>
+            <a class="text-light text-decoration-none" href="">Service</a>
+            <a class="text-light text-decoration-none" href="">Team</a>
+            <a class="text-light text-decoration-none" href="">Project</a>
+            <a class="text-light text-decoration-none" href="">Blog</a>
+            <a class="text-light text-decoration-none" href="">Log-in</a>
           </div>
         </div>
       </div>

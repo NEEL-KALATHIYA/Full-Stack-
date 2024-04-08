@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation
+{
+    height: 60px;
+}
+.logo
+{
+    height: 100px;
+    width: 100px;
+}
+.logo-in
+{
+    height: 60px;
+    width: 100px;
+}
+.links
+{
+    height: 60px;
+    width: 550px;
+}
+.nav-icons
+{
+    height: 60px;
+    width: 200px;
+}
+.link
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.round
+{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.round>i
+{
+    font-size: 20px;
+}
+.profile
+{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3135/3135715.png) !important;
+}
+
+.icon-bar {
+    font-size: 25px;
+}
+
+.i-text {
+    display: none;
+    
+}
+
+@media (max-width: 991px) {
+    .i-text {
+        display: block;
+    }
+
+    .links>a {
+        display: none;
+    }
+
+  
+
+}
+.box{
+    height: 400px !important;
+    width: 400px !important;
+
+}
+.counter{
+    height: 200px !important;
+    
+}
+.counter span{
+    font-size: 80px;
+}
+
+.section1{
+    background-image: url("https://img.freepik.com/free-photo/team-young-specialist-doctors-standing-corridor-hospital_1303-21199.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    opacity:85%;
+}
+
+.sub1
+{
+    width: 100%;
+    height: 250px;
+}
+
+.sub2{
+    opacity: 100% !important;
+    width: 100%;
+    height: 350px;
+    p{
+        margin-top: 01% !important;
+    }
+
+
+}
+
+.input{
+    margin-top: 1.5% !important;
+    input{
+        width: 20% !important;
+        padding: 0.5% !important;
+        border: 0px;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: blue;
+        color: white !important;
+        padding: 0.5% !important;
+        border: 0px;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}
+
+.footer-parent
+{
+    height: 600px;
+    background-color: rgb(8, 8, 53);
+}
+.child
+{
+    height: 450px;
+}
+.footer-boxes
+{
+    height: 400px;
+    width: 300px;
+    row-gap: 15%;
+}
+.company
+{
+    font-weight: 700;
+   
+}
+.footer-boxes1
+{
+    height: 400px;
+    row-gap: 5%;
+    width: 300px;
+    /* row-gap: 15%; */
+}
+.footer-boxes1>a{
+    font-size: 20px;
+}
+.section4
+{
+    width: 100%;
+    height: 600px;
+}
+
+.box1{
+    padding: 10px;
+    width: 20%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    font-size:30px;
+    text-align: center;
+
+    P{
+        font-size: 25px;
+    }
+
+    img{
+        margin: 02% !important;
+    }
+}
