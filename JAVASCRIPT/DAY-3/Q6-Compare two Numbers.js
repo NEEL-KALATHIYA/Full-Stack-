@@ -1,8 +1,15 @@
-let a=1
-let b=2
-let c=3
-let d=4
+function compareTwo_Numbers(n1, n2) {
+  if (n1 > n2) console.log(true);
+  else console.log(false);
 
-sum=a+b+d-c
+  if (n1 < n2) console.log(true);
+  else console.log(false);
 
-console.log(sum);
+  if (n1 == n2) console.log(true);
+  else console.log(false);
+}
+
+const n1 = process.argv[2],
+  n2 = process.argv[3];
+
+compareTwo_Numbers(n1, n2);

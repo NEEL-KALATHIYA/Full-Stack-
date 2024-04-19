@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>:root {
+        --background-color: #a9abae;
+        --btn-color: #1338be;
+        --container-background-color: #fff;
+      }
+      
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: var(--container-background-color);
+      }
+      
+      .container {
+        background-color: var(--background-color);
+        /* border: 1px solid #000; */
+        /* position: relative;
+         z-index: 10; */
+        box-shadow: 0 0 10px rgb(0, 0, 0, 5);
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 75px;
+      }
+      
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 10px;
+      }
+      
+      button {
+        background-color: var(--btn-color);
+        color: #fff;
+        max-width: 300px;
+        margin: 5px auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: cornflowerblue;
+      }
+      
+      p {
+        font-size: medium;
+        font-weight: bold;
+      }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="form">
+          <label for="birthday" id="birthday">Enter your  date of birth:</label>
+          <input type="date" name="birthday" id="birthdayInput">
+          <button id="btn">Calculate Age</button>
+          <p id="result">Find your age</p>
+        </div>
+      
+      </div>
+      
+      <script>
+      
+const btnElement = document.getElementById("btn");
+
+const birthdayElement = document.getElementById("birthdayInput");
+const resultElement = document.getElementById("result");
+
+function calculateAge() {
+  const birthDateValue = birthdayElement.value;
+
+  if (birthDateValue === "") {
+    alert("Please enter your date of birth");
+  } else {
+ 
+    const age = getAge(birthDateValue);
+
+    resultElement.innerText = `You are ${age} ${
+      age > 1 ? "years" : "year"
+    } old`;
+  }
+}
+
+function getAge(birthDateValue) {
+  const currentDate = new Date();
+  const birthDate = new Date(birthDateValue);
+
+  let age = currentDate.getFullYear() - birthDate.getFullYear();
+
+  const month = currentDate.getMonth() - birthDate.getMonth();
+
+  if (
+    month < 0 ||
+    (month === 0 && currentDate.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+  return age;
+}
+
+btnElement.addEventListener("click", calculateAge);
+
+
+      </script>
+</body>
+</html>
