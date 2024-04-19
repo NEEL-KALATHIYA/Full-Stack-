@@ -1,10 +1,14 @@
-let one   = 1;
-let two   = 2;
-let three = 3;
-let four  = 4;
-let five  = 5;
-
-let sum = one + two + three + four + five;
-
-
-console.log("The sum is: " , sum);
+function Speed(distance = 1, time = 1) {
+    let result,
+      speed = distance / time;
+  
+    if (speed > 40) result = "Apply Brake";
+    else result = "Keep Going";
+  
+    return result;
+  }
+  
+  let distance = process.argv[2],
+    time = process.argv[3];
+  
+  console.log(Speed(distance, time));
