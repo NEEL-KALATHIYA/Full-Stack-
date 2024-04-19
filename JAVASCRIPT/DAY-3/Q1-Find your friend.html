@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
-    <style>:root {
+    <style>
+      :root {
         --background-color: #a9abae;
         --btn-color: #1338be;
         --container-background-color: #fff;
       }
-      
+
       body {
         margin: 0;
         padding: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: var(--container-background-color);
       }
-      
+
       .container {
         background-color: var(--background-color);
         /* border: 1px solid #000; */
@@ -31,26 +31,26 @@
         margin: 0 auto;
         margin-top: 75px;
       }
-      
+
       h1 {
         font-size: 36px;
         text-align: center;
         margin-top: 0;
         margin-bottom: 20px;
       }
-      
+
       .form {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      
+
       label {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
       }
-      
+
       input {
         padding: 8px;
         border: 1px solid #ccc;
@@ -59,7 +59,7 @@
         max-width: 300px;
         margin: 0 auto 10px;
       }
-      
+
       button {
         background-color: var(--btn-color);
         color: #fff;
@@ -71,71 +71,93 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
-      
+
       button:hover {
         background-color: cornflowerblue;
       }
-      
+
       p {
         font-size: medium;
         font-weight: bold;
       }
-      </style>
-</head>
-<body>
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <h1>Age Calculator</h1>
-        <div class="form">
-          <label for="birthday" id="birthday">Enter your  date of birth:</label>
-          <input type="date" name="birthday" id="birthdayInput">
-          <button id="btn">Calculate Age</button>
-          <p id="result">Find your age</p>
-        </div>
-      
+      <h1>Age Calculator</h1>
+      <div class="form">
+        <label for="birthday" id="birthday">Enter your date of birth:</label>
+        <input type="date" name="birthday" id="birthdayInput" />
+        <button id="btn">Calculate Age</button>
+        <p id="result">Find your age</p>
+        <p id="age"></p>
       </div>
-      
-      <script>
-      
-const btnElement = document.getElementById("btn");
+    </div>
 
-const birthdayElement = document.getElementById("birthdayInput");
-const resultElement = document.getElementById("result");
+    <script>
+      const btnElement = document.getElementById("btn");
 
-function calculateAge() {
-  const birthDateValue = birthdayElement.value;
+      const birthdayElement = document.getElementById("birthdayInput");
+      const resultElement = document.getElementById("result");
 
-  if (birthDateValue === "") {
-    alert("Please enter your date of birth");
-  } else {
- 
-    const age = getAge(birthDateValue);
+      function calculateAge() {
+        const birthDateValue = birthdayElement.value;
 
-    resultElement.innerText = `You are ${age} ${
-      age > 1 ? "years" : "year"
-    } old`;
-  }
-}
+        if (birthDateValue === "") {
+          alert("Please enter your date of birth");
+        } else {
+          console.log(birthDateValue);
+          const age = getAge(birthDateValue);
 
-function getAge(birthDateValue) {
-  const currentDate = new Date();
-  const birthDate = new Date(birthDateValue);
+          // resultElement.innerText = `You are ${age} ${
+          //   age > 1 ? "years" : "year"
+          // } old`;
 
-  let age = currentDate.getFullYear() - birthDate.getFullYear();
+          console.log("age checker ", getFriend(age));
+          document.getElementById("age").innerText = getFriend(age);
 
-  const month = currentDate.getMonth() - birthDate.getMonth();
+          document.getElementById("result").innerText = `You are ${age} ${
+            age > 1 ? "years" : "year"
+          } old`;
+        }
+        // document.getElementById("age").innerText = getFriend(age);
+      }
 
-  if (
-    month < 0 ||
-    (month === 0 && currentDate.getDate() < birthDate.getDate())
-  ) {
-    age--;
-  }
-  return age;
-}
+      function getAge(bdv) {
+        console.log("In getAge: ", bdv);
+        const currentDate = new Date();
+        const birthDate = new Date(bdv);
 
-btnElement.addEventListener("click", calculateAge);
+        console.log(
+          "Year: ",
+          currentDate.getFullYear() - birthDate.getFullYear()
+        );
 
+        let age = currentDate.getFullYear() - birthDate.getFullYear();
 
-      </script>
-</body>
+        const month = currentDate.getMonth() - birthDate.getMonth();
+
+        if (
+          month < 0 ||
+          (month === 0 && currentDate.getDate() < birthDate.getDate())
+        ) {
+          age--;
+        }
+        return age;
+      }
+
+      function getFriend(age) {
+        var result;
+        console.log("age", age);
+        if (age < 13 && age > 0) result = "1 Kms";
+        else if (age >= 13 && age < 18) result = "5 Kms";
+        else if (age >= 18 && age < 30) result = "10 Kms";
+        else result = "You can have friend from anywhere";
+
+        return result;
+      }
+
+      btnElement.addEventListener("click", calculateAge);
+    </script>
+  </body>
 </html>
