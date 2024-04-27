@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      id="num1"
+      style="margin: 2%"
+      placeholder="Enter Number"
+    />
+    <br />
+    <input
+      type="number"
+      id="num2"
+      style="margin: 2%"
+      placeholder="Enter Number"
+    />
+    <br />
+    <input
+      type="number"
+      id="num3"
+      style="margin: 2%"
+      placeholder="Enter Number"
+    />
+    <br />
+    <input
+      type="number"
+      id="num4"
+      style="margin: 2%"
+      placeholder="Enter Number"
+    />
+    <br />
+    <button onclick="getResult()" style="margin: 2%">Submit</button> <br />
+    <h1 id="result" style="margin: 2%"></h1>
+  </body>
+  <script>
+    const giveValue = (id) => {
+      return document.getElementById(id).value;
+    };
+
+    const printResult = (result) => {
+      document.getElementById("result").innerHTML = result;
+    };
+
+    const getResult = () => {
+      const num1 = giveValue("num1"),
+        num2 = giveValue("num2"),
+        num3 = giveValue("num3"),
+        num4 = giveValue("num4");
+
+      const result = `Subtraction  is :  ${num1 - num2 - num3 - num4}`;
+
+      printResult(result);
+    };
+  </script>
+</html>
