@@ -247,7 +247,6 @@ data.map((ele) => {
     let price = `<p>$${ele.price}</p>`;
     let btn1 = "<button>Add to Cart</button>";
     let btn2 = "<button class=btnb>Buy Now</button>";
-    
 
     let div = `<div>${img}${title}${price}${btn1}${btn2}</div>`;
 
@@ -260,4 +259,10 @@ const cartBtn = document.querySelector(".cart-btn");
 
 cartBtn.addEventListener("click",()=>{
   cartBtn.classList.add("clicked");
+//   alert(`Thanks for buying the ${title}.😀`);
 })
+
+btn1.addEventListener("click",()=>{
+    alert(`Thank You For Comming and Buying ${title}.🙏🏻`)
+})
+
