@@ -262,7 +262,7 @@ cartBtn.addEventListener("click",()=>{
 //   alert(`Thanks for buying the ${title}.😀`);
 })
 
-btn1.addEventListener("click",()=>{
-    alert(`Thank You For Comming and Buying ${title}.🙏🏻`)
+btnb.addEventListener("click",()=>{
+    alert(`🙏🏻   Thank You For Comming and Buying...   🙏🏻`)
 })
 
