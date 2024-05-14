@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.h1{
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.t{
+    margin-top: 6%;
+    border:"2px";
+    
+     
+}
+.c{
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+}
+.t2{
+    background-color: gold;
+}
+
+
+.delete{
+    background-color: red;
+}
