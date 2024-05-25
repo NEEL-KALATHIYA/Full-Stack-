@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <form id="employee-form">
+        <input type="text" id="name" placeholder="Name" required><br>
+        <select id="job-role" required>
+          <option value="">Select Job Role</option>
+          <option value="Manager">Manager</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Analyst">Analyst</option>
+        </select><br>
+        <select id="department" required>
+          <option value="">Select Department</option>
+          <option value="HR">HR</option>
+          <option value="Finance">Finance</option>
+          <option value="IT">IT</option>
+        </select><br>
+        <input type="number" id="salary" placeholder="Salary" required><br>
+        <input type="email" id="contact-email" placeholder="Email" required><br>
+        <input type="number" id="work-experience" placeholder="Work Experience" required><br>
+        <button type="submit">Add Employee</button>
+      </form>
+    </div>
+    <div class="table-section">
+      <table id="employee-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Job Role</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Contact Email</th>
+            <th>Work Experience</th>
+            <th>Role Type</th>
+            <th>Fire Employee</th>
+          </tr>
+        </thead>
+        <tbody id="employee-table-body">
+        </tbody>
+      </table>
+    </div>
+    <div class="count-section">
+      <p>Total Active Employees: <span id="total-employees">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
