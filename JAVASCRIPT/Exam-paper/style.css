@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    margin-top: 1%;
+    border: 2px solid black;
+}
+
+.ep{
+    background-image: linear-gradient(rgb(26, 209, 229) 20%,rgb(0, 0, 0) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
