@@ -204,8 +204,21 @@
     --primary-hover-color: #ff7700;
     /* margin-top: -10px; */
     /* margin-bottom: -20px; */
+    /* display: flex;
+    justify-content: center !important;
+    align-items: end !important; */
+    margin-left: 18% !important;
+
+
     
   }
+
+
+  .btnb1{
+    margin-left: 18% !important;
+  }
+
+
   *{
     margin: 0;
     padding: 0;

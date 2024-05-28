@@ -245,7 +245,7 @@ data.map((ele) => {
     let img = `<img src="${ele.image}">`;
     let title = `<h3>${ele.title}</h3>`;
     let price = `<p>$${ele.price}</p>`;
-    let btn1 = "<button>Add to Cart</button>";
+    let btn1 = "<button class=btnb1>Add to Cart</button>";
     let btn2 = "<button class=btnb>Buy Now</button>";
 
     let div = `<div>${img}${title}${price}${btn1}${btn2}</div>`;
