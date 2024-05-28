@@ -1,0 +1,41 @@
+#form input{
+    display: flex !important;
+    height: 15%;
+    width: 260px !important;
+    justify-content: center !important;
+  }
+
+  #form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  td button {
+    background: red;
+    columns: white;
+    width: 120px;
+    border: none;
+  }
+
+  th {
+    background: green;
+  }
+  .t{
+    margin-top: 10%;
+        
+  }
