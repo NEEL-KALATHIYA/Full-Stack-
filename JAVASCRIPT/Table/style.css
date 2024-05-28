@@ -17,7 +17,10 @@
     justify-content: center;
     
   }
-
+/* 
+  body{
+    border: 2px solid black;
+  } */
 
   th,
   td {
@@ -38,4 +41,14 @@
   .t{
     margin-top: 10%;
         
+  }
+
+  .h1{
+    color: rgb(0, 0, 0);
+  }
+
+  body{
+    background: linear-gradient(#0055ff94 20%,rgba(0, 183, 255, 0.504) 80%) !important;
+    
+    
   }
