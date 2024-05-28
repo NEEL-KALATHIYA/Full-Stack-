@@ -26,7 +26,7 @@
 
       body {
         font-family: sans-serif;
-        background: green;
+        background: rgb(255, 255, 255);
         color: white;
       }
 
@@ -73,6 +73,10 @@
       }
       .cube.show-6 {
         transform: translateZ(-100px) rotateX(90deg);
+      }
+
+      .h1 {
+        color: black;
       }
 
       .cube__face {
@@ -134,36 +138,48 @@
       label {
         margin-right: 10px;
       }
+
+      .center {
+        display: flex !important;
+        justify-content: center !important;
+      }
     </style>
   </head>
   <body>
-    <h2>3D Dice CSS</h2>
-    <p>Click the button below to Roll the Dice</p>
-    <div class="scene">
-      <div class="cube">
-        <div class="cube__face cube__face--1">1</div>
-        <div class="cube__face cube__face--2">2</div>
-        <div class="cube__face cube__face--3">3</div>
-        <div class="cube__face cube__face--4">4</div>
-        <div class="cube__face cube__face--5">5</div>
-        <div class="cube__face cube__face--6">6</div>
-      </div>
-
-      <button class="rollBtn">Roll the Dice</button>
+    <div class="center">
+      <h2 class="h1">3D Dice CSS</h2>
     </div>
+    <div class="center">
+      <p class="h1">Click the button below to Roll the Dice</p>
+    </div>
+    <div class="center">
+      <div class="scene">
+        <div class="cube">
+          <div class="cube__face cube__face--1">1</div>
+          <div class="cube__face cube__face--2">2</div>
+          <div class="cube__face cube__face--3">3</div>
+          <div class="cube__face cube__face--4">4</div>
+          <div class="cube__face cube__face--5">5</div>
+          <div class="cube__face cube__face--6">6</div>
+        </div>
+        
+        <button class="rollBtn">Roll the Dice</button>
+      </div>
+    </div>
+    
   </body>
   <script>
     let cube = document.querySelector(".cube");
     let rollBtn = document.querySelector(".rollBtn");
     let currentClass = "";
 
-    const getRandomInt = (min, max) =>  {
+    const getRandomInt = (min, max) => {
       min = Math.ceil(min);
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
-    }
+    };
 
-    const rollDice = () =>{
+    const rollDice = () => {
       let randNum = getRandomInt(1, 7);
       console.log(randNum);
       let showClass = "show-" + randNum;
@@ -173,8 +189,8 @@
       }
       cube.classList.add(showClass);
       currentClass = showClass;
-    }
-    
+    };
+
     rollDice();
 
     rollBtn.addEventListener("click", rollDice);
