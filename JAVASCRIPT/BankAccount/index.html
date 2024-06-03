@@ -6,8 +6,6 @@
     <title>Ministore</title>
     <link rel="stylesheet" href="./style.css">
 
-
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -48,36 +46,43 @@
             </div>
     </header>
 
-   
-
-
-  
-        
-
 
     <div class="f">
-        <form class="f-ac">
-            <input class="name" type="text" name="name" placeholder="YOUR NAME" required>
-            <input class="number" type="number" name="number" placeholder="YOUR NUMBER" required>
-            <input class="add" type="text" name="Add" placeholder="YOUR ADDRESS" required>
-            <input class="type" type="text" name="type" placeholder="ACCOUNT TYPE" required>
-            <input class="pancard_no" type="text" name="number" placeholder="YOUR PANCARD NO." required>
-            <input class="submit" type="submit" name="submit" placeholder="submit" required>
-            
+        <form id="data">
+          <input id="name" class="form-control" type="text" placeholder="YOUR NAME" required/>
+          <input id="Number" class="form-control" type="number" placeholder="Mobile Number" required/>
+          <input id="acnumber" class="form-control" type="number" placeholder="Account Number"  required/>
+          <input class="type" type="text" name="type" placeholder="ACCOUNT TYPE" required>
+
+          <button type="submit" id="submit_data" class="btn btn-primary">
+            Submit
+          </button>
         </form>
+    
+        <form id="money" >
+          <input id="deposit_money" class="form-control" type="number" placeholder="Deposit Money" />
+          <button type="submit" id="money_submit" class="btn btn-success">
+            Deposit
+          </button>
+        </form>
+
     </div>
+    
+          
+      
+
     <div id="product">
 
     </div>
 
 </body>
 <script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
 
 
 
 
 
-
-
-<!-- Importing Poppins Font From Google Fonts -->
