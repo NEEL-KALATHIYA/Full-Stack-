@@ -34,7 +34,7 @@ body{
 .card{
     position: relative;
     width: 500px;
-    height: 800px;
+    height: 600px;
     background: #fff;
     box-shadow: 15px 15px 60px rgba(0,0,0,0.15);
     padding: 20px;
@@ -106,5 +106,9 @@ body{
 .actionbtns{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px !important;
+    margin-top: 20px !important; 
+}
+
+#b{
+    margin-left: 20px;
 }
