@@ -75,6 +75,16 @@ const cartBtn = document.querySelector(".cart-btn");
 // })
 
 
+document
+.getElementById("check_balance_button")
+.addEventListener("click", function () {
+  document.getElementById(
+    "balance_check"
+  ).innerText = `Current balance: ₹${userAccount.getBalance()}`;
+});
+
+
+
 
 class BankAccount {
     #accountNo;
@@ -196,4 +206,3 @@ class BankAccount {
     });
   });
 
-  
