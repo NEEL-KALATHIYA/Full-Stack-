@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style> 
+	.login{
+        
+        display:flex;
+        justify-content:center;
+        align-items:center;
+		/* border: 2px solid rgb(255, 255, 255); */
+		flex-direction: column;
+		input{
+			margin: 3%;
+			height: 50px;
+			width: 600px;
+			font-style:normal;
+			color: black;
+			font-size: large;
+		}
+		button
+		{
+			margin: 3%;
+            height: 50px;
+            width: 600px;
+			font-size: x-large;
+		}
+        }
+
+		#loginM{
+			width:40%;
+			height: 500px !important;
+			margin: auto;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            /* border: 2px solid rgb(255, 255, 255); */
+			margin-top: 6%;
+		}
+		</style>
+  </head>
+  <body>
+    <div id="navbar">
+          <!-- Options -->
+<div id="nav-colors">
+	Navbar
+	<button id="pink" class="btn"></button>
+	<button id="red" class="btn"></button>
+	<button id="purple" class="btn"></button>
+	<button id="blue" class="btn"></button>
+	<button id="green" class="btn"></button>
+	<button id="yellow" class="btn"></button>
+	<button id="orange" class="btn"></button>
+</div>
+<div id="font-colors">
+	Font
+	<button id="white" class="btn"></button>
+	<button id="black" class="btn"></button>
+</div>
+<div id="edges">
+	Edges
+	<button id="rounded" class="btn">Rounded</button>
+	<button id="square" class="btn">Square</button>
+</div>
+<h1>Minimal Bootstrap Navbar</h1>
+<nav class="navbar">
+	<div class="container-fluid">
+		<!-- Nav Header -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/JAVASCRIPT/Project Local-Storege/index.html"><span class="fa fa-home"></span><span class="link"> Home</span></a>
+		</div>
+		<!-- Nav Collapse -->
+		<div class="navbar-collapse collapse" id="collapse-1">
+			<!-- Nav Left -->
+			<ul class="nav navbar-nav">
+				<!-- Products -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-tags"></span><span class="link"> Products</span> <span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/JAVASCRIPT/Project Local-Storege/Pages/Product.html"><span class="fa fa-tag"></span> Products</a></li>
+						<li><a href="/JAVASCRIPT/Project Local-Storege/Pages/AddProduct.html"><span class="fa fa-tag"></span> AddProduct</a></li>
+					</ul>
+				</li>
+				<!-- Services -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-gears"></span><span class="link"> Account</span> <span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="fa fa-gear"/></span> Service 1</a></li>
+						<li><a href="#"><span class="fa fa-gear"/></span> Service 2</a></li>
+						<li><a href="#"><span class="fa fa-gear"/></span> Service 3</a></li>
+					</ul>
+				</li>
+				<!-- About -->
+        <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-info-circle"></span><span class="link">Profile</span> <span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/JAVASCRIPT/Project Local-Storege/Pages/SignUp.html"><span class="fa fa-gear"/></span>Sign UP</a></li>
+						<li><a href="/JAVASCRIPT/Project Local-Storege/Pages/Login.html"><span class="fa fa-gear"/></span>Login</a></li>
+					</ul>
+				</li>
+				<!-- Contact -->
+				<li><a href="#"><span class="fa fa-phone"></span><span class="link"> Contact</span></a></li>
+			</ul>
+			<!-- Nav Right -->
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn"><span class="fa fa-search"></span></button>
+			</form>
+		</div>
+	</div>
+</nav>
+    </div>
+	<h1></h1>
+
+	<div class="navbar" id="loginM">
+		
+		<form class="login">
+			<h1>Login</h1>
+			<input type="text" placeholder="Username">
+			<input type="password" placeholder="Password">
+			
+			<button>Login</button>
+		  </form>
+		  
+		
+	</div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
+  <script src="/JAVASCRIPT/Project Local-Storege/js/index.js" type="module"></script>
+ 
+</html>
