@@ -1,172 +1,108 @@
-var menuIcon = document.querySelector(".menu_icon")
-var sidebar = document.querySelector(".sidebar")
-var content = document.querySelector(".content")
+let song = [
+    {
+        image: "https://c.saavncdn.com/168/Peele-Peele-O-More-Raja-Tapori-Mix-Hindi-2022-20220702045823-500x500.jpg",
+        name: "Peele Peele",
+        audio: '/JAVASCRIPT/Music/songs/Peele Peele.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/1.jpg",
+        name: "Warriyo - Mortals",
+        audio: '/JAVASCRIPT/Music/songs/1.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/2.jpg",
+        name: "Cielo - Huma-Huma",
+        audio: '/JAVASCRIPT/Music/songs/2.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/3.jpg",
+        name: "DEAF KEV",
+        audio: '/JAVASCRIPT/Music/songs/3.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/4.jpg",
+        name: "Different Heaven",
+        audio: '/JAVASCRIPT/Music/songs/4.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/5.jpg",
+        name: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release",
+        audio: '/JAVASCRIPT/Music/songs/5.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/6.jpg",
+        name: "Rabba - Salam-e-Ishq",
+        audio: '/JAVASCRIPT/Music/songs/6.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/7.jpg",
+        name: "Sakhiyaan - Salam-e-Ishq",
+        audio: '/JAVASCRIPT/Music/songs/7.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/8.jpg",
+        name: "Bhula Dena - Salam-e-Ishq",
+        audio: '/JAVASCRIPT/Music/songs/8.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/9.jpg",
+        name: "Tumhari Kasam - Salam-e-Ishq",
+        audio: '/JAVASCRIPT/Music/songs/9.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
+    {
+        image: "./covers/10.jpg",
+        name: "Na Jaana - Salam-e-Ishq",
+        audio: '/JAVASCRIPT/Music/songs/10.mp3',
+        icon: `<i class="fa-solid fa-play"></i>`
+    },
 
-menuIcon.onclick =function(){
-    sidebar.classList.toggle("small-sidebar")
-    content.classList.toggle("large-content")
-}
+]
 
+const handleData = (e) => {
+    document.getElementById("imageBig").src = e.image;
 
-document.querySelector(".logo").addEventListener("click", () => {
-    window.location.href = "index.html";
-});
+    let aud = document.getElementById("btt");
+    aud.src = e.audio;
 
-
-// -----------------------------------
-
-let searchInput = document.getElementById("search_input");
-
-searchInput.addEventListener("keydown", async function (event) {
-    if (event.code === "Enter") {
-       
-            try {
-                let inp= searchInput.value;
-        
-                let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${inp}&key=AIzaSyCWmsjslHkf5HrCvKjkSL-G89v3inCk-18&maxResults=40&order=viewCount&safeSearch=strict`);
-                let data = await res.json();
-                console.log(data.items);
-                appendvideos(data.items);
-        
-            } catch (error) {
-                console.log(error);
-            
-                
-        }
-        document.querySelector(".banner").style.display = "none";
-        searchInput.value = '';
-        
+    let playIcon = document.querySelector('.iconparent i');
+    if (playIcon) {
+        // playIcon.classList.remove("fa-play");
+        playIcon.classList.add("fa-pause");
     }
- });
-
-
-
-
-const appendvideos = (data) =>{
-    document.querySelector('.list_content').innerHTML = '';
-    data.forEach((el) => {
-        
-        let vid_list = document.createElement('div');
-        vid_list.classList.add('vid_list');
-
-        let thumbnail = document.createElement('img');
-        thumbnail.src = el.snippet.thumbnails.medium.url;
-        thumbnail.classList.add('thumbnail');
-        thumbnail.addEventListener('click', () => {
-            window.open(`https://www.youtube.com/watch?v=${el.id.videoId}`);
-            let videoId = el.id.videoId;
-            localStorage.setItem('videoId', videoId);
-            localStorage.setItem('videoTitle', el.snippet.title);
-            localStorage.setItem('videoDesc', el.snippet.description);
-            localStorage.setItem('videoChannel', el.snippet.channelTitle);
-
-            window.location.href ="play-video.html";
-            
-            window.location.href ="play-video.html?videoId="+el.id.videoId;
-        });
-
-        let flex_div = document.createElement('div');
-        flex_div.classList.add('flex-div');
-
-        let userImg = document.createElement('img');
-        userImg.src ="./images/Jack.png";
-
-        let vid_info = document.createElement('div');
-        vid_info.classList.add('vid-info');
-
-        let title = document.createElement('a');
-        title.innerHTML = el.snippet.title;
-     
-        let username = document.createElement('p');
-        username.innerHTML = el.snippet.channelTitle;
-
-        let view_count = document.createElement('p');
-        view_count.innerHTML = el.statistics.viewCount;
-
-        vid_info.append(title, username);
-        flex_div.append(userImg,vid_info);
-        vid_list.append(thumbnail, flex_div);
-
-        document.querySelector('.list_content').append(vid_list);
-
-
-    });
 }
 
+const Mapper = (audios) => {
+    audios.map((ele) => {
+        let div = document.createElement("div");
+        div.classList.add("divMain");
 
-// -------------------------------
+        let image = document.createElement("img");
+        image.src = ele.image;
+        image.classList.add("img-fluid", "images");
 
+        let name = document.createElement("h2");
+        name.innerHTML = ele.name;
 
-const videos= async() => {
-    
+        let hr = document.createElement("hr")
+        let iconParent = document.createElement("div");
+        iconParent.classList.add("iconparent")
+        iconParent.innerHTML = ele.icon;
+        iconParent.addEventListener("click", () => handleData(ele));
 
-        try {
-            
-    
-            let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&key=AIzaSyCWmsjslHkf5HrCvKjkSL-G89v3inCk-18&maxResults=80&order=viewCount&safeSearch=moderate`);
-            let data = await res.json();
-            console.log(data.items);
-            append(data.items);
-    
-        } catch (error) {
-            console.log(error);
-        
-            
-    }
-  
+        div.append(image, name, iconParent);
+        document.getElementById("songPlayer").append(div, hr);
+
+    })
 }
 
-videos();
-
-const append = (data) =>{
-    document.querySelector('.list_content').innerHTML = '';
-    data.forEach((el) => {
-        
-        let vid_list = document.createElement('div');
-        vid_list.classList.add('vid_list');
-
-        let thumbnail = document.createElement('img');
-        thumbnail.src = el.snippet.thumbnails.medium.url;
-        thumbnail.classList.add('thumbnail');
-        thumbnail.addEventListener('click', () => {
-            window.open(`https://www.youtube.com/watch?v=${el.id.videoId}`);
-            let videoId = el.id.videoId;
-            localStorage.setItem('videoId', videoId);
-            localStorage.setItem('videoTitle', el.snippet.title);
-            localStorage.setItem('videoDesc', el.snippet.description);
-            localStorage.setItem('videoChannel', el.snippet.channelTitle);
-            window.location.href ="play-video.html";
-              
-            window.location.href ="play-video.html?videoId="+el.id.videoId;
-        });
-
-        let flex_div = document.createElement('div');
-        flex_div.classList.add('flex-div');
-
-        let userImg = document.createElement('img');
-        userImg.src ="./images/Jack.png";
-
-        let vid_info = document.createElement('div');
-        vid_info.classList.add('vid-info');
-
-        let title = document.createElement('a');
-        title.innerHTML = el.snippet.title;
-     
-        let username = document.createElement('p');
-        username.innerHTML = el.snippet.channelTitle;
-
-        let date = document.createElement('p');
-        date.innerHTML = el.snippet.publishedAt;
-        
-        let view_count = document.createElement('p');
-        view_count.innerHTML = el.statistics.viewCount;
-
-        vid_info.append(title, username);
-        flex_div.append(userImg,vid_info);
-        vid_list.append(thumbnail, flex_div);
-
-        document.querySelector('.list_content').append(vid_list);
-
-
-    });
-}
+Mapper(song);
