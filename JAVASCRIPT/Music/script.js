@@ -76,7 +76,6 @@ const handleData = (e) => {
 
     let playIcon = document.querySelector('.iconparent i');
     if (playIcon) {
-        // playIcon.classList.remove("fa-play");
         playIcon.classList.add("fa-pause");
     }
 }
