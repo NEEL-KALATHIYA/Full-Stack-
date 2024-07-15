@@ -106,16 +106,16 @@ const Mapper = (audios) => {
 
 Mapper(song);
 
-const HandleSearchData = (e) => {
-    e.preventDefault();
-    let value = document.getElementById("Search").value;
-    HandleSearch(value);
-}
+// const HandleSearchData = (e) => {
+//     e.preventDefault();
+//     let value = document.getElementById("Search").value;
+//     HandleSearch(value);
+// }
 
-const HandleLiveInput = () => {
-    let value = document.getElementById("Search").value;
-    HandleSearch(value);
-}
+// const HandleLiveInput = () => {
+//     let value = document.getElementById("Search").value;
+//     HandleSearch(value);
+// }
 
-document.getElementById("Search").addEventListener("keypress", HandleLiveInput);
-document.getElementById("Searching").addEventListener("submit", HandleSearchData);
+// document.getElementById("Search").addEventListener("keypress", HandleLiveInput);
+// document.getElementById("Searching").addEventListener("submit", HandleSearchData);
