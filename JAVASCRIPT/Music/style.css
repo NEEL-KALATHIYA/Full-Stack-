@@ -5,10 +5,15 @@
 body{
     background-color: black;
     height: 100% !important;
+
+    background-image: url(https://static.vecteezy.com/system/resources/previews/039/074/137/non_2x/ai-generated-minimilast-black-color-music-abstract-background-with-large-copyspace-area-with-copy-space-for-text-free-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
 }
 .b{
-    height: 100vh !important;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,16 +21,26 @@ body{
     gap: 10%;
 }
 
+.hedphone{
+    margin-top: -400%;
+    margin-left: 150%;
+}
+
 .bs{
     height: 500px;
     width: 900px;
-    margin-left: 60%;
+    margin-left: 5%;
+    background-color: transparent !important;
 }
 
+#btt{
+    margin-top: 100%;
+    margin-left: -55% !important;
+}
 
 .bs1{
-    margin-top: -520px !important;
-    margin-left: 543px !important;
+    margin-top: -150% !important;
+    margin-left: 100% !important;
     height: 235px !important;
     width: 235px !important;
     border-radius: 50%;
@@ -34,11 +49,15 @@ body{
 
 
 .bs2{
-    margin-left: 80% !important;
-    margin-top: 30% !important;
+    margin-left: 90% !important;
+    margin-top: -100% !important;
 }
 
-
+.back{
+    height: 1000px;
+    width: 2000px;
+    margin-top: -1000px;
+}
 
 #btt1{
     margin-top: 25%;
@@ -49,9 +68,9 @@ body{
 
 
 #songPlayer{
-    margin-right: 50% !important;
-    margin-top:-16% !important ;
-    background-color: black;
+    margin-right: 70% !important;
+    margin-top:-35% !important ;
+    /* background-color: black; */
     color: rgb(255, 255, 255);
 }
 
@@ -100,6 +119,7 @@ body{
     border-radius: 50%;
     background-color: green;
 }
+
 
 
 

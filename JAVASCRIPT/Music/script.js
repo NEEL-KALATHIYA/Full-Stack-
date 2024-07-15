@@ -31,7 +31,7 @@ let song = [
     },
     {
         image: "./covers/5.jpg",
-        name: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release",
+        name: "Janji-Heroes-Tonight",
         audio: '/JAVASCRIPT/Music/songs/5.mp3',
         icon: `<i class="fa-solid fa-play"></i>`
     },
@@ -105,3 +105,17 @@ const Mapper = (audios) => {
 }
 
 Mapper(song);
+
+const HandleSearchData = (e) => {
+    e.preventDefault();
+    let value = document.getElementById("Search").value;
+    HandleSearch(value);
+}
+
+const HandleLiveInput = () => {
+    let value = document.getElementById("Search").value;
+    HandleSearch(value);
+}
+
+document.getElementById("Search").addEventListener("keypress", HandleLiveInput);
+document.getElementById("Searching").addEventListener("submit", HandleSearchData);
