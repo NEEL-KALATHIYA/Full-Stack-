@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animation 16s ease-in-out infinite;
+    background-size: cover;
+}
+
+.outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(28, 28, 28, 0.5);
+}
+
+.details {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 45%;
+    margin: 50px auto;
+    background-color: rgba(252, 154, 154, 0.2);
+    padding: 50px;
+    margin: auto;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 40px;
+
+}
+
+label {
+    color: white;
+    font-size: x-large;
+}
+
+#Employee_info {
+    margin: auto;
+}
+
+#salary {
+    width: 95%;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+@keyframes animation {
+
+    0%,
+    100% {
+        background-image: url(./image/1.png);
+    }
+
+    10% {
+        background-image: url(./image/2.jpg);
+    }
+
+    20% {
+        background-image: url(./image/3.jpg);
+    }
+
+    30% {
+        background-image: url(./image/4.jpg);
+    }
+
+    40% {
+        background-image: url(./image/5.jpg);
+    }
+
+    50% {
+        background-image: url(./image/6.avif);
+    }
+
+    60% {
+        background-image: url(./image/7.jpg);
+    }
+
+    70% {
+        background-image: url(./image/8.jpg);
+    }
+
+    80% {
+        background-image: url(./image/9.avif);
+    }
+
+    90% {
+        background-image: url(./image/10.avif);
+    }
+}

@@ -4,37 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form name="submit-to-google-sheet">
-      <label for="name">Name:</label>
-      <input name="Name" type="text" placeholder="Name" required />
-      <label for="Number">Number:</label>
-      <input name="Number" type="number" placeholder="Number" required />
-      <label for="email">Email:</label>
-      <input name="Email" type="email" placeholder="Email" required />
-      <label for="Password">Password:</label>
-      <input name="Password" type="text" placeholder="Password" required />
-      <label for="Address">Address:</label>
-      <input name="Address" type="text" placeholder="Address" required />
-      <label for="Age">Age:</label>
-      <input name="Age" type="number" placeholder="Age" required />
-      <label for="Gender">Gender:</label>
-      <input name="Gender" type="text" placeholder="Gender" required />
-      <label for="Birth Date">Birth Date:</label>
-      <input name="Birth Date" type="date" placeholder="Birth Date" required />
-      <label for="Submit Time">Submit Time:</label>
-      <input name="Submit Time" type="time" placeholder="Submit Time" required />
-      <label for="Massage">Massage:</label>
-      <input name="Massage" type="text" placeholder="Massage" required />
-      <button type="submit">Send</button><br>
-      <span id="success"></span>
-    </form>
+    <div class="container">
+      <div class="outer">
+        <div class="details">
+
+          <form id="Employee_info name="submit-to-google-sheet">
+            <label for="name">Name:</label>
+            <input id="salary" name="Name" type="text" placeholder="Name" required />
+            <label for="Number">Number:</label>
+            <input id="salary" name="Number" type="number" placeholder="Number" required />
+            <label for="email">Email:</label>
+            <input id="salary" name="Email" type="email" placeholder="Email" required />
+            <label for="Password">Password:</label>
+            <input id="salary" name="Password" type="text" placeholder="Password" required />
+            <label for="Address">Address:</label>
+            <input id="salary" name="Address" type="text" placeholder="Address" required />
+            <label for="Age">Age:</label>
+            <input id="salary" name="Age" type="number" placeholder="Age" required />
+            <label for="Gender">Gender:</label>
+            <input id="salary" name="Gender" type="text" placeholder="Gender" required />
+            <label for="Birth Date">Birth Date:</label>
+            <input id="salary" name="Birth Date" type="date" placeholder="Birth Date" required />
+            <label for="Submit Time">Submit Time:</label>
+            <input id="salary"
+              name="Submit Time"
+              type="time"
+              placeholder="Submit Time"
+              required
+            />
+            <label for="Massage">Massage:</label>
+            <input id="salary" name="Massage" type="text" placeholder="Massage" required />
+            <button id="salary" class="" type="submit">Send</button><br />
+            <span id="success"></span>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    
 
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzUV81uGphDoPM7DBICnYXWx73S78maLZQnCgr2EAed2Cit792_5EUHkVBlc7ICOWCv/exec";
+        "https://script.google.com/macros/s/AKfycbztq4LYSGpyVBm9qjmWorOoZtLEIayud_M9nZ2DI0iQoR6xtJSBuNo-7g6X4EwrSaOK/exec";
       const form = document.forms["submit-to-google-sheet"];
       const success = document.getElementById("success");
 
@@ -43,10 +57,10 @@
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             success.innerHTML = "Form submitted successfully!";
-            
-            setTimeout (function(){
+
+            setTimeout(function () {
               success.innerHTML = "";
-            }, 5000);
+            }, 100);
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
