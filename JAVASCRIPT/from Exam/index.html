@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form name="submit-to-google-sheet">
+      <label for="name">Name:</label>
+      <input name="Name" type="text" placeholder="Name" required />
+      <label for="Number">Number:</label>
+      <input name="Number" type="number" placeholder="Number" required />
+      <label for="email">Email:</label>
+      <input name="Email" type="email" placeholder="Email" required />
+      <label for="Password">Password:</label>
+      <input name="Password" type="text" placeholder="Password" required />
+      <label for="Address">Address:</label>
+      <input name="Address" type="text" placeholder="Address" required />
+      <label for="Age">Age:</label>
+      <input name="Age" type="number" placeholder="Age" required />
+      <label for="Gender">Gender:</label>
+      <input name="Gender" type="text" placeholder="Gender" required />
+      <label for="Birth Date">Birth Date:</label>
+      <input name="Birth Date" type="date" placeholder="Birth Date" required />
+      <label for="Submit Time">Submit Time:</label>
+      <input name="Submit Time" type="time" placeholder="Submit Time" required />
+      <label for="Massage">Massage:</label>
+      <input name="Massage" type="text" placeholder="Massage" required />
+      <button type="submit">Send</button><br>
+      <span id="success"></span>
+    </form>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzUV81uGphDoPM7DBICnYXWx73S78maLZQnCgr2EAed2Cit792_5EUHkVBlc7ICOWCv/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const success = document.getElementById("success");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            success.innerHTML = "Form submitted successfully!";
+            
+            setTimeout (function(){
+              success.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      // var sheetName = 'Sheet1';  // Name of the sheet where data will be stored
+      // var scriptProperties = PropertiesService.getScriptProperties();  // Service to store script properties
+
+      // function setupSpreadsheetId () {
+      //   var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+      //   scriptProperties.setProperty('spreadsheetId', activeSpreadsheet.getId());
+      // }
+
+      // function doPost (e) {
+      //   var scriptLock = LockService.getScriptLock();  // Script lock to handle concurrent access
+      //   scriptLock.tryLock(100);  // Attempt to acquire the lock for 10 mineseconds
+
+      //   try {
+      //     var spreadsheetId = scriptProperties.getProperty('spreadsheetId');
+      //     var spreadsheet = SpreadsheetApp.openById(spreadsheetId);
+      //     var sheet = spreadsheet.getSheetByName(sheetName);
+
+      //     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+      //     var nextRow = sheet.getLastRow() + 1;
+
+      //     var newRowData = headers.map(function(header) {
+      //       return header === 'timestamp' ? new Date() : e.parameter[header];
+      //     });
+
+      //     sheet.getRange(nextRow, 1, 1, newRowData.length).setValues([newRowData]);
+
+      //     return ContentService
+      //       .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+      //       .setMimeType(ContentService.MimeType.JSON);
+      //   }
+
+      //   catch (error) {
+      //     return ContentService
+      //       .createTextOutput(JSON.stringify({ 'result': 'error', 'error': error }))
+      //       .setMimeType(ContentService.MimeType.JSON);
+      //   }
+
+      //   finally {
+      //     scriptLock.releaseLock();  // Release the script lock
+      //   }
+      // }
+    </script>
+  </body>
+</html>
