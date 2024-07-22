@@ -15,26 +15,11 @@ const uimaker = () => {
     let title = document.createElement("h6");
     title.innerHTML = `News Title : ${item.title}`;
 
-    let description = document.createElement("p");
-    description.innerHTML = `Description : ${item.description}`;
+    let Price = document.createElement("p");
+    Price.innerHTML = `Price : ${item.Price}`;
 
     let country = document.createElement("h6");
     country.innerHTML = item.country;
-
-    let btn1 = document.createElement("button");
-    let count = parseInt(localStorage.getItem("count")) || 0;
-    btn1.innerHTML = "Subscribe" + "</br>" + count;
-    btn1.style.backgroundColor = "darkturquoise";
-
-    btn1.addEventListener("click", () => {
-      count++;
-
-      btn1.innerHTML = "Subscribe<br>" + count;
-
-      localStorage.setItem("count", count);
-
-      alert("You Subscribed This News Channel!!");
-    });
 
     let btn2 = document.createElement("button");
     btn2.innerHTML = "SHARE";
@@ -44,12 +29,12 @@ const uimaker = () => {
     });
 
     let btn_div = document.createElement("div");
-    btn_div.append(btn1, btn2);
+    btn_div.append(btn2);
 
     btn_div.setAttribute("id", "btn_div");
 
     let box = document.createElement("div");
-    box.append(img_div, title, description, country, btn_div, btn1);
+    box.append(img_div, title, Price, country, btn_div);
     box.setAttribute("id", "box");
 
     document.getElementById("show_data").append(box);

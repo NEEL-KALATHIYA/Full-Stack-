@@ -5,7 +5,7 @@ const handledata = (e) => {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         img: document.getElementById("img").value,
-        country: document.getElementById("country").value,
+        City: document.getElementById("city").value,
         password: document.getElementById("password").value
     }
 
