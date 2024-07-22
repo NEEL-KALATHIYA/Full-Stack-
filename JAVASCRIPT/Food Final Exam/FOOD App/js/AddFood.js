@@ -5,9 +5,9 @@ let Add_data = JSON.parse(localStorage.getItem("Add_data")) || [];
 
         let data = {
             title: document.getElementById("title").value,
-            description: document.getElementById("Price").value,
+            Price: document.getElementById("Price").value,
             img: document.getElementById("img").value,
-            country: document.getElementById("city").value
+            city: document.getElementById("city").value
         }
         Add_data.push(data);
         localStorage.setItem("Add_data", JSON.stringify(Add_data));

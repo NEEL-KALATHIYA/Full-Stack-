@@ -13,19 +13,19 @@ const uimaker = () => {
     img_div.append(img);
 
     let title = document.createElement("h6");
-    title.innerHTML = `News Title : ${item.title}`;
+    title.innerHTML = `Food Title : ${item.title}`;
 
     let Price = document.createElement("p");
     Price.innerHTML = `Price : ${item.Price}`;
 
-    let country = document.createElement("h6");
-    country.innerHTML = item.country;
+    let city = document.createElement("h6");
+    city.innerHTML = item.city;
 
     let btn2 = document.createElement("button");
-    btn2.innerHTML = "SHARE";
+    btn2.innerHTML = "Order Now";
     btn2.style.backgroundColor = "darkturquoise";
     btn2.addEventListener("click", () => {
-      alert("You Shared This News");
+      alert("You Order Now This Food");
     });
 
     let btn_div = document.createElement("div");
@@ -34,7 +34,7 @@ const uimaker = () => {
     btn_div.setAttribute("id", "btn_div");
 
     let box = document.createElement("div");
-    box.append(img_div, title, Price, country, btn_div);
+    box.append(img_div, title, Price, city, btn_div);
     box.setAttribute("id", "box");
 
     document.getElementById("show_data").append(box);
@@ -52,7 +52,7 @@ const profile = () => {
 
   let email = document.createElement("h2");
 
-  let country = document.createElement("h3");
+  let city = document.createElement("h3");
 
   img.src = user.img;
 
@@ -65,9 +65,9 @@ const profile = () => {
   name.innerHTML = user.name;
   email.innerHTML = user.email;
 
-  country.innerHTML = user.country;
+  city.innerHTML = user.city;
 
-  document.getElementById("profile").append(img_div, name, email, country);
+  document.getElementById("profile").append(img_div, name, email, city);
 };
 
 uimaker();
