@@ -9,7 +9,7 @@ const uimaker = () => {
     img.setAttribute("id", "img");
 
     let img_div = document.createElement("div");
-    img_div.setAttribute("id", "news_img_div");
+    img_div.setAttribute("id", "Food_img_div");
     img_div.append(img);
 
     let title = document.createElement("h6");
@@ -69,6 +69,128 @@ const profile = () => {
 
   document.getElementById("profile").append(img_div, name, email, city);
 };
+
+
+
+
+const getCityName = async (lat, lng) => {
+  const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`);
+  const data = await response.json();
+  console.log(data);
+};
+
+const HandlePrice = (order) => {
+  let temp;
+  if (order === "LTH") {
+    temp = products.products.sort((a, b) => a.price - b.price);
+  } else {
+    temp = products.products.sort((a, b) => b.price - a.price);
+  }
+  ApiData({ products: temp });
+};
+
+const HandleFilter = (category) => {
+  let filter = products.products.filter((ele) => ele.category === category);
+  ApiData({ products: filter });
+};
+
+const HandleSearch = (value) => {
+  let temp = products.products.filter((e) => e.title.includes(value));
+  ApiData({ products: temp });
+};
+
+const HandleSearchData = (e) => {
+  e.preventDefault();
+  let value = document.getElementById("Search").value;
+  HandleSearch(value);
+};
+
+const HandleLiveInput = () => {
+  let value = document.getElementById("Search").value;
+  HandleSearch(value);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("Search").addEventListener("keypress", HandleLiveInput);
+  document.getElementById("Searching").addEventListener("submit", HandleSearchData);
+
+  document.getElementById("Chainis").addEventListener("click", () => HandleFilter("Chainis"));
+  document.getElementById("Indain").addEventListener("click", () => HandleFilter("Indain"));
+  document.getElementById("Bangali").addEventListener("click", () => HandleFilter("Bangali"));
+
+  document.getElementById("LTH").addEventListener("click", () => HandlePrice("LTH"));
+  document.getElementById("HTL").addEventListener("click", () => HandlePrice("HTL"));
+});
+
+
+
+
+
+
+
+
+/*
+const getCityName=async(lat, lng)=> {
+  const response = await fetch(
+  `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`
+  );
+  const data = await response.json();
+  console.log(data);
+  
+  }
+
+
+
+
+const HandlePrice = (order) => {
+  let temp;
+  if (order === "LTH") {
+      temp = products.products.sort((a, b) => a.price - b.price);
+  } else {
+      temp = products.products.sort((a, b) => b.price - a.price);
+  }
+  ApiData({ products: temp });
+}
+
+
+
+const HandleFilter = (category) => {
+  let filter = products.products.filter((ele) => ele.category === category);
+  ApiData({ products: filter });
+}
+
+
+
+const HandleSearch = (value) => {
+  let temp = products.products.filter((e) => e.title.includes(value));
+  ApiData({ products: temp });
+}
+
+const HandleSearchData = (e) => {
+  e.preventDefault();
+  let value = document.getElementById("Search").value;
+  HandleSearch(value);
+}
+
+const HandleLiveInput = () => {
+  let value = document.getElementById("Search").value;
+  HandleSearch(value);
+}
+
+document.getElementById("Search").addEventListener("keypress", HandleLiveInput);
+document.getElementById("Searching").addEventListener("submit", HandleSearchData);
+
+
+document.getElementById("Chainis").addEventListener("click" , ()=> HandleFilter("Chainis"))
+document.getElementById("Indain").addEventListener("click", ()=>  HandleFilter("Indain"))
+document.getElementById("Bangali").addEventListener("click" ,()=>  HandleFilter("Bangali"))
+
+
+
+document.getElementById("LTH").addEventListener("click", () => HandlePrice("LTH"));
+document.getElementById("HTL").addEventListener("click", () => HandlePrice("HTL"));
+
+*/
 
 uimaker();
 profile();

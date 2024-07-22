@@ -39,7 +39,7 @@ h1{
     height: 40px;
     width: 100px;
     margin: 0 95px;
-    background-color: rgba(0, 217, 255, 0.775);
+    background-color: rgba(0, 0, 0, 0.775);
     border: none;
     color: white;
 }
@@ -48,7 +48,7 @@ h1{
 
 
 #menu1 {
-    background-color: rgb(85, 125, 152);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
