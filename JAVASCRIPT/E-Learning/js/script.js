@@ -1,8 +1,8 @@
-const API_URL = 'http://localhost:3000/';
+const API_URL = 'https://e-learning-json-server.onrender.com';
 
 if (window.location.pathname === '/index.html') {
     document.addEventListener('DOMContentLoaded', async () => {
-        const response = await fetch('http://localhost:3000/');
+        const response = await fetch('https://e-learning-json-server.onrender.com');
         const courses = await response.json();
         const coursesList = document.getElementById('coursesList');
 

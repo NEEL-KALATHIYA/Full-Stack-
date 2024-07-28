@@ -50,7 +50,7 @@ $(document).ready(function () {
         });
 
         $.ajax({
-            url: 'http://localhost:3000/courses',
+            url: 'https://e-learning-json-server.onrender.com',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(course),

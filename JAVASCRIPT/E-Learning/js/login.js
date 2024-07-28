@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const response = await fetch("http://localhost:3000/users", {
+            const response = await fetch("https://e-learning-json-server.onrender.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById("loginPassword").value;
 
         try {
-            const response = await fetch(`http://localhost:3000/users?email=${email}&password=${password}`);
+            const response = await fetch(`https://e-learning-json-server.onrender.com?email=${email}&password=${password}`);
             const users = await response.json();
             if (users.length > 0) {
                 alert("Login successful!");

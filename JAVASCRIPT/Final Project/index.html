@@ -1,13 +1,1315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apple</title>
+  <meta name="title" content="Apple">
+  <meta name="description" content="This is a e-commerce website. ">
+
+  <link rel="shortcut icon" href="" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
 </head>
-<body>
-    
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="header-top">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" width="40" height="28" alt="booken home">
+        </a>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+          <button class="btn btn-primary">Search</button>
+        </div>
+
+        <div class="header-action">
+
+          <button class="header-action-btn" aria-label="cart" title="Cart">
+            <span class="span">0</span>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+
+          <a href="">
+            <button class="header-action-btn" aria-label="user" title="User">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </a>
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" data-navbar>
+      <div class="container">
+
+        <nav class="navbar">
+
+          <button class="nav-close-btn" data-nav-toggler aria-label="clsoe menu" title="Clsoe Menu">
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <div class="navbar-top">
+            <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a class='navbar-link ' href='index.html'>Home</a>
+            </li>
+
+            <li>
+              <a class='navbar-link' href='index.html'>Blog</a>
+            </li>
+
+            <li>
+              <a class='navbar-link activ' href='index.html'>Shop</a>
+            </li>
+
+            <li>
+              <a href="index.html" class="navbar-link">About Us</a>
+            </li>
+
+            <li>
+              <a class='navbar-link' href='index.html'>Contact</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="tel:+91 9106339930" class="header-contact-link">
+          <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">+91 9106339930</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="overlay" data-overlay data-nav-toggler></div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+
+
+
+      <!-- 
+        - #FEATURED COLLECTION
+      -->
+
+      <section class="section featured" aria-label="featured collection">
+        <div class="container">
+
+            <br><br><br><br> <br>
+
+          <h2 class="h2 section-title">Featured Collections</h2>
+
+          <p class="section-text">
+           Brand New Collection - iphone, Samsung, Asus, Xaomi, Realme, OnePlus
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <span class="card-badge">New</span>
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                    class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Iphone 14 max pro</a>
+                  </h3>
+
+                  <data class="card-price" value="80">BDT 1,50,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+            <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+              <li>
+                <div class="product-card">
+  
+                  <span class="card-badge">New</span>
+  
+                  <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                    <img src="app1.webp" width="384" height="480" loading="lazy" alt="Black Night"
+                      class="img-cover">
+  
+                    <div class="card-action">
+  
+                      <button class="action-btn" aria-label="quick view" title="Quick View">
+                        <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="compare" title="Compare">
+                        <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                      <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                  <div class="card-content">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Iphone 14 max pro</a>
+                    </h3>
+  
+                    <data class="card-price" value="80">BDT 1,50,000</data>
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 384; --height: 480;">
+                  <img src="app1.webp" width="384" height="480" loading="lazy"
+                    alt="About The First Night" class="img-cover">
+
+                  <div class="card-action">
+
+                    <button class="action-btn" aria-label="quick view" title="Quick View">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to wishlist" title="Add to Wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare" title="Compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to cart" title="Add to Cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">iphone 14 </a>
+                  </h3>
+
+                  <data class="card-price" value="19">BDT 1,20,000</data>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-color: #F1F6F9;">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="file-apple-logo-black-svg-wikimedia-commons-1.png" width="40" height="28" alt="booken home">
+          </a>
+
+          <p class="footer-text">
+            Apple Inc. is an American multinational company and was founded in 1976 to sell the Apple I personal computer. It is headquartered in California that sells various electronics.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">2023</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Update</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendors</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Review</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Positive Dog Training</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Veterinary Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Insurance</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Advanced</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2023 | AshiQur Rahman
+        </p>
+
+        <img src="./assets/images/payment-mehtod.png" width="311" height="30" loading="lazy" alt="Payment method"
+          class="w-100">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-<script src="./script.js"></script>
+
 </html>
